@@ -11,6 +11,7 @@ Plot the results:
 nsplash twof-nodrag_0*.dat -y 18
 
 You can also run all the tests in this directory using ./1DSPMHD *.in
+Type "make cleanallfiles" to remove all runtime files from the directory
 
 Things to try
 --------------

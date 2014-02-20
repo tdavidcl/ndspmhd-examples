@@ -1,0 +1,1217 @@
+&DATAOPTS
+ BUFFER_DATA=F,
+ ICALCQUANTITIES=F,
+ IRESCALE=F,
+ XORIGIN= 3*0.00000000      ,
+ ITRACKTYPE=          0,
+ ITRACKOFFSET=          0,
+ /
+&PLOTOPTS
+ IPLOTLINE=F,
+ LINESTYLE=          1,
+ LINECOLOUR=          1,
+ IMARKTYPE=         17,          4,         17,          1,          3,
+  7*1          ,
+ IPLOTPARTOFTYPE= 2*T, 10*F,
+ PLOTONRENDERINGS= 12*F,
+ IEXACT=         14,
+ ICOORDSNEW=          1,
+ IFASTPARTICLEPLOT=T,
+ IDEFAULTCOLOURTYPE= 12*-1         ,
+ ITYPEORDER=          1,          2,          3,          4,          5,
+           6,          7,          8,          9,         10,         11,
+          12,
+ USETYPEINCONTOURS= 12*F,
+ IPLOTERRBARS=F,
+ ILOCERRBARS= 64*0          ,
+ HFACMARKERS=  1.00000000    ,
+ /
+&PAGEOPTS
+ IAXIS=          0,
+ NACROSS=          1,
+ NDOWN=          5,
+ INTERACTIVE=T,
+ IADAPT=F,
+ IADAPTCOORDS=F,
+ NSTEPSPERPAGE=          1,
+ ICOLOUREACHSTEP=T,
+ ICHANGESTYLES=F,
+ TILE=T,
+ IPAPERSIZE=          3,
+ PAPERSIZEX=  8.00000000    ,
+ ASPECTRATIO=  1.00000000    ,
+ IPLOTLEGEND=T,
+ IPLOTSTEPLEGEND=F,
+ HPOSLEGEND=  2.63239406E-02,
+ VPOSLEGEND= 0.987498045    ,
+ IPLOTTITLES=T,
+ HPOSTITLE=  2.63239406E-02,
+ VPOSTITLE= -7.36249781    ,
+ FJUSTTITLE=  0.00000000    ,
+ LEGENDTEXT='t=                                                                              ',
+ IPAGECOLOURS=          0,
+ CHARHEIGHT=  1.00000000    ,
+ LINEWIDTH=          0,
+ FJUSTLEGEND=  0.00000000    ,
+ IPLOTLEGENDONLYONPANEL=         -1,
+ IPLOTSCALE=F,
+ DXSCALE=  1.00000000    ,
+ SCALETEXT='1 unit                                                                          ',
+ HPOSSCALE= 0.500000000    ,
+ VPOSSCALE=  1.00000000    ,
+ ISCALEPANEL=          0,
+ IUSEBACKGROUNDCOLOURFORAXES=F,
+ USESQUAREXY=T,
+ MAXLINESTYLE=          5,
+ MODLINESTYLE=          1,
+ MAXCOLOUR=         16,
+ MODCOLOUR=          1,
+ USECOLUMNORDER=T,
+ IPAPERSIZEUNITS=          1,
+ ADJUSTLIMITSTODEVICE=F,
+ ALPHALEGEND= 0.500000000    ,
+ YSCALEALT=  1.00000000    ,
+ LABELYALT='                                                                                ',
+ /
+&RENDEROPTS
+ NPIX=          0,
+ ICOLOURS=          2,
+ NCONTOURS=         30,
+ IPLOTCONT_NOMULTI=F,
+ ICOLOUR_PARTICLES=F,
+ COLOURBARDISP=  5.00000000    ,
+ INORMALISE_INTERPOLATIONS=F,
+ IFASTRENDER=F,
+ IDENSITYWEIGHTEDINTERPOLATION=F,
+ ICOLOURBARSTYLE=          1,
+ IPLOTCOLOURBARLABEL=T,
+ ILABELCONT=F,
+ PROJLABELFORMAT='                                                                                                    ',
+ IAPPLYPROJFORMAT=          0,
+ DOUBLE_RENDERING=F,
+ IKERNEL=          0,
+ COLOURBARPOSX= 0.750000000    ,
+ COLOURBARPOSY= 0.699999988    ,
+ COLOURBARLEN= 0.250000000    ,
+ COLOURBARFMTSTR='BCMSTV    ',
+ COLOURBARWIDTH=  2.00000000    ,
+ /
+&VECTOROPTS
+ NPIXVEC=         40,
+ USEBACKGNDCOLORVECPLOT=F,
+ IPLOTPARTVEC=T,
+ IVECPLOTLEGEND=T,
+ HPOSLEGENDVEC=  1.99999996E-02,
+ VPOSLEGENDVEC= -1.50000000    ,
+ IPLOTSTREAMLINES=F,
+ IPLOTARROWHEADS=T,
+ IPLOTSYNCHROTRON=F,
+ RCRIT=  13.0000000    ,
+ ZCRIT=  2.50000000    ,
+ SYNCHROTRONSPECINDEX= 0.800000012    ,
+ UTHERMCUTOFF= -1.00000000    ,
+ IHIDEARROWSWHERENOPARTS=F,
+ MINPARTFORARROW=          1,
+ IALLARROWSSAMELENGTH=F,
+ IVECLEGENDONPANEL=          0,
+ /
+&XSECROTOPTS
+ XSEC_NOMULTI=F,
+ XSECPOS_NOMULTI=  0.00000000    ,
+ FLYTHRU=F,
+ XSECLINEX1=  0.00000000    ,
+ XSECLINEX2=  0.00000000    ,
+ XSECLINEY1=  0.00000000    ,
+ XSECLINEY2=  0.00000000    ,
+ IROTATE=F,
+ IROTATEAXES=          0,
+ ANGLEX=  0.00000000    ,
+ ANGLEY=  0.00000000    ,
+ ANGLEZ=  0.00000000    ,
+ XMINROTAXES= 3*0.00000000      ,
+ XMAXROTAXES= 3*0.00000000      ,
+ USE3DPERSPECTIVE=F,
+ USE3DOPACITYRENDERING=F,
+ ZOBSERVER=  0.00000000    ,
+ DZSCREENFROMOBSERVER=  0.00000000    ,
+ TAUPARTDEPTH=  2.00000000    ,
+ WRITEPPM=T,
+ XSECWIDTH=  0.00000000    ,
+ RENDERSINKS=F,
+ /
+&POWERSPECOPTS
+ IPOWERSPECY=          2,
+ IDISORDERED=T,
+ NWAVELENGTHS=        128,
+ NFREQSPEC=          1,
+ NPDFBINS=          0,
+ /
+&EXACTOPTS
+ IEXACTPLOTX=          0,
+ IEXACTPLOTY=          0,
+ FILENAME_EXACT='                                                                                                                        ',
+ MAXEXACTPTS=       1001,
+ IEXACTLINECOLOUR=          2,
+ IEXACTLINESTYLE=          1,
+ IAPPLYTRANSEXACTFILE=T,
+ ICALCULATEEXACTERRORS=T,
+ IPLOTRESIDUALS=F,
+ FRACINSETRESIDUALS= 0.150000006    ,
+ RESIDUALMAX=  0.00000000    ,
+ IPLOTEXACTONLYONPANEL=          0,
+ /
+&EXACTPARAMS
+ AMPL=  9.99999975E-05,
+ LAMBDA=  1.00000000    ,
+ PERIOD=  1.00000000    ,
+ IWAVEPLOTY=          7,
+ IWAVEPLOTX=          1,
+ XZERO=-0.500000000    ,
+ HTSTAR=  1.00000000    ,
+ ATSTAR=  1.00000000    ,
+ CTSTAR=  1.00000000    ,
+ ALPHATSTAR=  0.00000000    ,
+ BETATSTAR=  0.00000000    ,
+ CTSTAR1=  0.00000000    ,
+ CTSTAR2=  0.00000000    ,
+ POLYK=  1.00000000    ,
+ SIGMA0=  0.00000000    ,
+ NORDER=         -1,
+ MORDER=          0,
+ RHOSEDOV=  1.00000000    ,
+ ESEDOV=  1.00000000    ,
+ RHO_L=  1.00000000    ,
+ RHO_R= 0.125000000    ,
+ PR_L=  1.00000000    ,
+ PR_R= 0.100000001    ,
+ V_L=  0.00000000    ,
+ V_R=  0.00000000    ,
+ ISHK=          1,
+ HFACT=  1.20000005    ,
+ IPROFILE=          1,
+ MSPHERE=  1.00000000    ,  0.00000000    ,
+ RSOFT=  1.00000000    , 0.100000001    ,
+ ICOLPOTEN=          0,
+ ICOLFGRAV=          0,
+ MSTAR=  1.00000000    ,
+ RTORUS=  1.00000000    ,
+ DISTORTION=  1.10000002    ,
+ MRING=  1.00000000    ,
+ RRING=  1.00000000    ,
+ VISCNU=  1.00000005E-03,
+ NFUNC=          1,
+ FUNCSTRING= 10*'                                                                                                                        ',
+ CS=  1.00000000    ,
+ KDRAG=  1000.00000    ,
+ RHOZERO=  1.00000000    ,
+ RDUST_TO_GAS=  1.00000000    ,
+ SEMI=  1.00000000    ,
+ ECC=  0.00000000    ,
+ MPRIM=  1.00000000    ,
+ MSEC=  1.00000000    ,
+ IXCOLFILE=          1,
+ IYCOLFILE=          2,
+ XSHOCK=  0.00000000    ,
+ TOTMASS=  1.00000000    ,
+ MACHS=  50.0000000    ,
+ MACHA=  5.00000000    ,
+ /
+&MULTI
+ NYPLOTMULTI=          4,
+ ITRANS= 64*0          ,
+ MULTIPLOTX= 64*1          ,
+ MULTIPLOTY=          2,          3,          4,          5, 60*0          ,
+ 
+ IRENDERMULTI= 64*0          ,
+ IVECPLOTMULTI= 64*0          ,
+ ICONTOURMULTI= 64*0          ,
+ X_SECMULTI= 64*F,
+ XSECPOSMULTI= 64*0.00000000      ,
+ IUSEALLTYPESMULTI= 64*T,
+ IPLOTPARTOFTYPEMULTI=T, 12*F,T, 12*F,T,
+  12*F,T, 12*F,T, 12*F,T,
+  12*F,T, 12*F,T, 12*F,T,
+  12*F,T, 12*F,T, 12*F,T,
+  624*F,
+ /
+&SHAPEOPTS
+ NSHAPES=          0,
+ SHAPE(1)%ITYPE=          0,
+ SHAPE(1)%ICOLOUR=          1,
+ SHAPE(1)%LINESTYLE=          1,
+ SHAPE(1)%LINEWIDTH=          1,
+ SHAPE(1)%IFILLSTYLE=          2,
+ SHAPE(1)%IUNITS=          1,
+ SHAPE(1)%IPLOTONPANEL=          0,
+ SHAPE(1)%XPOS= 0.500000000    ,
+ SHAPE(1)%YPOS= 0.500000000    ,
+ SHAPE(1)%XLEN=  1.00000000    ,
+ SHAPE(1)%YLEN=  1.00000000    ,
+ SHAPE(1)%ANGLE=  0.00000000    ,
+ SHAPE(1)%FJUST=  0.00000000    ,
+ SHAPE(1)%TEXT='                                                                                                                        ',
+ SHAPE(2)%ITYPE=          0,
+ SHAPE(2)%ICOLOUR=          1,
+ SHAPE(2)%LINESTYLE=          1,
+ SHAPE(2)%LINEWIDTH=          1,
+ SHAPE(2)%IFILLSTYLE=          2,
+ SHAPE(2)%IUNITS=          1,
+ SHAPE(2)%IPLOTONPANEL=          0,
+ SHAPE(2)%XPOS= 0.500000000    ,
+ SHAPE(2)%YPOS= 0.500000000    ,
+ SHAPE(2)%XLEN=  1.00000000    ,
+ SHAPE(2)%YLEN=  1.00000000    ,
+ SHAPE(2)%ANGLE=  0.00000000    ,
+ SHAPE(2)%FJUST=  0.00000000    ,
+ SHAPE(2)%TEXT='                                                                                                                        ',
+ SHAPE(3)%ITYPE=          0,
+ SHAPE(3)%ICOLOUR=          1,
+ SHAPE(3)%LINESTYLE=          1,
+ SHAPE(3)%LINEWIDTH=          1,
+ SHAPE(3)%IFILLSTYLE=          2,
+ SHAPE(3)%IUNITS=          1,
+ SHAPE(3)%IPLOTONPANEL=          0,
+ SHAPE(3)%XPOS= 0.500000000    ,
+ SHAPE(3)%YPOS= 0.500000000    ,
+ SHAPE(3)%XLEN=  1.00000000    ,
+ SHAPE(3)%YLEN=  1.00000000    ,
+ SHAPE(3)%ANGLE=  0.00000000    ,
+ SHAPE(3)%FJUST=  0.00000000    ,
+ SHAPE(3)%TEXT='                                                                                                                        ',
+ SHAPE(4)%ITYPE=          0,
+ SHAPE(4)%ICOLOUR=          1,
+ SHAPE(4)%LINESTYLE=          1,
+ SHAPE(4)%LINEWIDTH=          1,
+ SHAPE(4)%IFILLSTYLE=          2,
+ SHAPE(4)%IUNITS=          1,
+ SHAPE(4)%IPLOTONPANEL=          0,
+ SHAPE(4)%XPOS= 0.500000000    ,
+ SHAPE(4)%YPOS= 0.500000000    ,
+ SHAPE(4)%XLEN=  1.00000000    ,
+ SHAPE(4)%YLEN=  1.00000000    ,
+ SHAPE(4)%ANGLE=  0.00000000    ,
+ SHAPE(4)%FJUST=  0.00000000    ,
+ SHAPE(4)%TEXT='                                                                                                                        ',
+ SHAPE(5)%ITYPE=          0,
+ SHAPE(5)%ICOLOUR=          1,
+ SHAPE(5)%LINESTYLE=          1,
+ SHAPE(5)%LINEWIDTH=          1,
+ SHAPE(5)%IFILLSTYLE=          2,
+ SHAPE(5)%IUNITS=          1,
+ SHAPE(5)%IPLOTONPANEL=          0,
+ SHAPE(5)%XPOS= 0.500000000    ,
+ SHAPE(5)%YPOS= 0.500000000    ,
+ SHAPE(5)%XLEN=  1.00000000    ,
+ SHAPE(5)%YLEN=  1.00000000    ,
+ SHAPE(5)%ANGLE=  0.00000000    ,
+ SHAPE(5)%FJUST=  0.00000000    ,
+ SHAPE(5)%TEXT='                                                                                                                        ',
+ SHAPE(6)%ITYPE=          0,
+ SHAPE(6)%ICOLOUR=          1,
+ SHAPE(6)%LINESTYLE=          1,
+ SHAPE(6)%LINEWIDTH=          1,
+ SHAPE(6)%IFILLSTYLE=          2,
+ SHAPE(6)%IUNITS=          1,
+ SHAPE(6)%IPLOTONPANEL=          0,
+ SHAPE(6)%XPOS= 0.500000000    ,
+ SHAPE(6)%YPOS= 0.500000000    ,
+ SHAPE(6)%XLEN=  1.00000000    ,
+ SHAPE(6)%YLEN=  1.00000000    ,
+ SHAPE(6)%ANGLE=  0.00000000    ,
+ SHAPE(6)%FJUST=  0.00000000    ,
+ SHAPE(6)%TEXT='                                                                                                                        ',
+ SHAPE(7)%ITYPE=          0,
+ SHAPE(7)%ICOLOUR=          1,
+ SHAPE(7)%LINESTYLE=          1,
+ SHAPE(7)%LINEWIDTH=          1,
+ SHAPE(7)%IFILLSTYLE=          2,
+ SHAPE(7)%IUNITS=          1,
+ SHAPE(7)%IPLOTONPANEL=          0,
+ SHAPE(7)%XPOS= 0.500000000    ,
+ SHAPE(7)%YPOS= 0.500000000    ,
+ SHAPE(7)%XLEN=  1.00000000    ,
+ SHAPE(7)%YLEN=  1.00000000    ,
+ SHAPE(7)%ANGLE=  0.00000000    ,
+ SHAPE(7)%FJUST=  0.00000000    ,
+ SHAPE(7)%TEXT='                                                                                                                        ',
+ SHAPE(8)%ITYPE=          0,
+ SHAPE(8)%ICOLOUR=          1,
+ SHAPE(8)%LINESTYLE=          1,
+ SHAPE(8)%LINEWIDTH=          1,
+ SHAPE(8)%IFILLSTYLE=          2,
+ SHAPE(8)%IUNITS=          1,
+ SHAPE(8)%IPLOTONPANEL=          0,
+ SHAPE(8)%XPOS= 0.500000000    ,
+ SHAPE(8)%YPOS= 0.500000000    ,
+ SHAPE(8)%XLEN=  1.00000000    ,
+ SHAPE(8)%YLEN=  1.00000000    ,
+ SHAPE(8)%ANGLE=  0.00000000    ,
+ SHAPE(8)%FJUST=  0.00000000    ,
+ SHAPE(8)%TEXT='                                                                                                                        ',
+ SHAPE(9)%ITYPE=          0,
+ SHAPE(9)%ICOLOUR=          1,
+ SHAPE(9)%LINESTYLE=          1,
+ SHAPE(9)%LINEWIDTH=          1,
+ SHAPE(9)%IFILLSTYLE=          2,
+ SHAPE(9)%IUNITS=          1,
+ SHAPE(9)%IPLOTONPANEL=          0,
+ SHAPE(9)%XPOS= 0.500000000    ,
+ SHAPE(9)%YPOS= 0.500000000    ,
+ SHAPE(9)%XLEN=  1.00000000    ,
+ SHAPE(9)%YLEN=  1.00000000    ,
+ SHAPE(9)%ANGLE=  0.00000000    ,
+ SHAPE(9)%FJUST=  0.00000000    ,
+ SHAPE(9)%TEXT='                                                                                                                        ',
+ SHAPE(10)%ITYPE=          0,
+ SHAPE(10)%ICOLOUR=          1,
+ SHAPE(10)%LINESTYLE=          1,
+ SHAPE(10)%LINEWIDTH=          1,
+ SHAPE(10)%IFILLSTYLE=          2,
+ SHAPE(10)%IUNITS=          1,
+ SHAPE(10)%IPLOTONPANEL=          0,
+ SHAPE(10)%XPOS= 0.500000000    ,
+ SHAPE(10)%YPOS= 0.500000000    ,
+ SHAPE(10)%XLEN=  1.00000000    ,
+ SHAPE(10)%YLEN=  1.00000000    ,
+ SHAPE(10)%ANGLE=  0.00000000    ,
+ SHAPE(10)%FJUST=  0.00000000    ,
+ SHAPE(10)%TEXT='                                                                                                                        ',
+ SHAPE(11)%ITYPE=          0,
+ SHAPE(11)%ICOLOUR=          1,
+ SHAPE(11)%LINESTYLE=          1,
+ SHAPE(11)%LINEWIDTH=          1,
+ SHAPE(11)%IFILLSTYLE=          2,
+ SHAPE(11)%IUNITS=          1,
+ SHAPE(11)%IPLOTONPANEL=          0,
+ SHAPE(11)%XPOS= 0.500000000    ,
+ SHAPE(11)%YPOS= 0.500000000    ,
+ SHAPE(11)%XLEN=  1.00000000    ,
+ SHAPE(11)%YLEN=  1.00000000    ,
+ SHAPE(11)%ANGLE=  0.00000000    ,
+ SHAPE(11)%FJUST=  0.00000000    ,
+ SHAPE(11)%TEXT='                                                                                                                        ',
+ SHAPE(12)%ITYPE=          0,
+ SHAPE(12)%ICOLOUR=          1,
+ SHAPE(12)%LINESTYLE=          1,
+ SHAPE(12)%LINEWIDTH=          1,
+ SHAPE(12)%IFILLSTYLE=          2,
+ SHAPE(12)%IUNITS=          1,
+ SHAPE(12)%IPLOTONPANEL=          0,
+ SHAPE(12)%XPOS= 0.500000000    ,
+ SHAPE(12)%YPOS= 0.500000000    ,
+ SHAPE(12)%XLEN=  1.00000000    ,
+ SHAPE(12)%YLEN=  1.00000000    ,
+ SHAPE(12)%ANGLE=  0.00000000    ,
+ SHAPE(12)%FJUST=  0.00000000    ,
+ SHAPE(12)%TEXT='                                                                                                                        ',
+ SHAPE(13)%ITYPE=          0,
+ SHAPE(13)%ICOLOUR=          1,
+ SHAPE(13)%LINESTYLE=          1,
+ SHAPE(13)%LINEWIDTH=          1,
+ SHAPE(13)%IFILLSTYLE=          2,
+ SHAPE(13)%IUNITS=          1,
+ SHAPE(13)%IPLOTONPANEL=          0,
+ SHAPE(13)%XPOS= 0.500000000    ,
+ SHAPE(13)%YPOS= 0.500000000    ,
+ SHAPE(13)%XLEN=  1.00000000    ,
+ SHAPE(13)%YLEN=  1.00000000    ,
+ SHAPE(13)%ANGLE=  0.00000000    ,
+ SHAPE(13)%FJUST=  0.00000000    ,
+ SHAPE(13)%TEXT='                                                                                                                        ',
+ SHAPE(14)%ITYPE=          0,
+ SHAPE(14)%ICOLOUR=          1,
+ SHAPE(14)%LINESTYLE=          1,
+ SHAPE(14)%LINEWIDTH=          1,
+ SHAPE(14)%IFILLSTYLE=          2,
+ SHAPE(14)%IUNITS=          1,
+ SHAPE(14)%IPLOTONPANEL=          0,
+ SHAPE(14)%XPOS= 0.500000000    ,
+ SHAPE(14)%YPOS= 0.500000000    ,
+ SHAPE(14)%XLEN=  1.00000000    ,
+ SHAPE(14)%YLEN=  1.00000000    ,
+ SHAPE(14)%ANGLE=  0.00000000    ,
+ SHAPE(14)%FJUST=  0.00000000    ,
+ SHAPE(14)%TEXT='                                                                                                                        ',
+ SHAPE(15)%ITYPE=          0,
+ SHAPE(15)%ICOLOUR=          1,
+ SHAPE(15)%LINESTYLE=          1,
+ SHAPE(15)%LINEWIDTH=          1,
+ SHAPE(15)%IFILLSTYLE=          2,
+ SHAPE(15)%IUNITS=          1,
+ SHAPE(15)%IPLOTONPANEL=          0,
+ SHAPE(15)%XPOS= 0.500000000    ,
+ SHAPE(15)%YPOS= 0.500000000    ,
+ SHAPE(15)%XLEN=  1.00000000    ,
+ SHAPE(15)%YLEN=  1.00000000    ,
+ SHAPE(15)%ANGLE=  0.00000000    ,
+ SHAPE(15)%FJUST=  0.00000000    ,
+ SHAPE(15)%TEXT='                                                                                                                        ',
+ SHAPE(16)%ITYPE=          0,
+ SHAPE(16)%ICOLOUR=          1,
+ SHAPE(16)%LINESTYLE=          1,
+ SHAPE(16)%LINEWIDTH=          1,
+ SHAPE(16)%IFILLSTYLE=          2,
+ SHAPE(16)%IUNITS=          1,
+ SHAPE(16)%IPLOTONPANEL=          0,
+ SHAPE(16)%XPOS= 0.500000000    ,
+ SHAPE(16)%YPOS= 0.500000000    ,
+ SHAPE(16)%XLEN=  1.00000000    ,
+ SHAPE(16)%YLEN=  1.00000000    ,
+ SHAPE(16)%ANGLE=  0.00000000    ,
+ SHAPE(16)%FJUST=  0.00000000    ,
+ SHAPE(16)%TEXT='                                                                                                                        ',
+ SHAPE(17)%ITYPE=          0,
+ SHAPE(17)%ICOLOUR=          1,
+ SHAPE(17)%LINESTYLE=          1,
+ SHAPE(17)%LINEWIDTH=          1,
+ SHAPE(17)%IFILLSTYLE=          2,
+ SHAPE(17)%IUNITS=          1,
+ SHAPE(17)%IPLOTONPANEL=          0,
+ SHAPE(17)%XPOS= 0.500000000    ,
+ SHAPE(17)%YPOS= 0.500000000    ,
+ SHAPE(17)%XLEN=  1.00000000    ,
+ SHAPE(17)%YLEN=  1.00000000    ,
+ SHAPE(17)%ANGLE=  0.00000000    ,
+ SHAPE(17)%FJUST=  0.00000000    ,
+ SHAPE(17)%TEXT='                                                                                                                        ',
+ SHAPE(18)%ITYPE=          0,
+ SHAPE(18)%ICOLOUR=          1,
+ SHAPE(18)%LINESTYLE=          1,
+ SHAPE(18)%LINEWIDTH=          1,
+ SHAPE(18)%IFILLSTYLE=          2,
+ SHAPE(18)%IUNITS=          1,
+ SHAPE(18)%IPLOTONPANEL=          0,
+ SHAPE(18)%XPOS= 0.500000000    ,
+ SHAPE(18)%YPOS= 0.500000000    ,
+ SHAPE(18)%XLEN=  1.00000000    ,
+ SHAPE(18)%YLEN=  1.00000000    ,
+ SHAPE(18)%ANGLE=  0.00000000    ,
+ SHAPE(18)%FJUST=  0.00000000    ,
+ SHAPE(18)%TEXT='                                                                                                                        ',
+ SHAPE(19)%ITYPE=          0,
+ SHAPE(19)%ICOLOUR=          1,
+ SHAPE(19)%LINESTYLE=          1,
+ SHAPE(19)%LINEWIDTH=          1,
+ SHAPE(19)%IFILLSTYLE=          2,
+ SHAPE(19)%IUNITS=          1,
+ SHAPE(19)%IPLOTONPANEL=          0,
+ SHAPE(19)%XPOS= 0.500000000    ,
+ SHAPE(19)%YPOS= 0.500000000    ,
+ SHAPE(19)%XLEN=  1.00000000    ,
+ SHAPE(19)%YLEN=  1.00000000    ,
+ SHAPE(19)%ANGLE=  0.00000000    ,
+ SHAPE(19)%FJUST=  0.00000000    ,
+ SHAPE(19)%TEXT='                                                                                                                        ',
+ SHAPE(20)%ITYPE=          0,
+ SHAPE(20)%ICOLOUR=          1,
+ SHAPE(20)%LINESTYLE=          1,
+ SHAPE(20)%LINEWIDTH=          1,
+ SHAPE(20)%IFILLSTYLE=          2,
+ SHAPE(20)%IUNITS=          1,
+ SHAPE(20)%IPLOTONPANEL=          0,
+ SHAPE(20)%XPOS= 0.500000000    ,
+ SHAPE(20)%YPOS= 0.500000000    ,
+ SHAPE(20)%XLEN=  1.00000000    ,
+ SHAPE(20)%YLEN=  1.00000000    ,
+ SHAPE(20)%ANGLE=  0.00000000    ,
+ SHAPE(20)%FJUST=  0.00000000    ,
+ SHAPE(20)%TEXT='                                                                                                                        ',
+ SHAPE(21)%ITYPE=          0,
+ SHAPE(21)%ICOLOUR=          1,
+ SHAPE(21)%LINESTYLE=          1,
+ SHAPE(21)%LINEWIDTH=          1,
+ SHAPE(21)%IFILLSTYLE=          2,
+ SHAPE(21)%IUNITS=          1,
+ SHAPE(21)%IPLOTONPANEL=          0,
+ SHAPE(21)%XPOS= 0.500000000    ,
+ SHAPE(21)%YPOS= 0.500000000    ,
+ SHAPE(21)%XLEN=  1.00000000    ,
+ SHAPE(21)%YLEN=  1.00000000    ,
+ SHAPE(21)%ANGLE=  0.00000000    ,
+ SHAPE(21)%FJUST=  0.00000000    ,
+ SHAPE(21)%TEXT='                                                                                                                        ',
+ SHAPE(22)%ITYPE=          0,
+ SHAPE(22)%ICOLOUR=          1,
+ SHAPE(22)%LINESTYLE=          1,
+ SHAPE(22)%LINEWIDTH=          1,
+ SHAPE(22)%IFILLSTYLE=          2,
+ SHAPE(22)%IUNITS=          1,
+ SHAPE(22)%IPLOTONPANEL=          0,
+ SHAPE(22)%XPOS= 0.500000000    ,
+ SHAPE(22)%YPOS= 0.500000000    ,
+ SHAPE(22)%XLEN=  1.00000000    ,
+ SHAPE(22)%YLEN=  1.00000000    ,
+ SHAPE(22)%ANGLE=  0.00000000    ,
+ SHAPE(22)%FJUST=  0.00000000    ,
+ SHAPE(22)%TEXT='                                                                                                                        ',
+ SHAPE(23)%ITYPE=          0,
+ SHAPE(23)%ICOLOUR=          1,
+ SHAPE(23)%LINESTYLE=          1,
+ SHAPE(23)%LINEWIDTH=          1,
+ SHAPE(23)%IFILLSTYLE=          2,
+ SHAPE(23)%IUNITS=          1,
+ SHAPE(23)%IPLOTONPANEL=          0,
+ SHAPE(23)%XPOS= 0.500000000    ,
+ SHAPE(23)%YPOS= 0.500000000    ,
+ SHAPE(23)%XLEN=  1.00000000    ,
+ SHAPE(23)%YLEN=  1.00000000    ,
+ SHAPE(23)%ANGLE=  0.00000000    ,
+ SHAPE(23)%FJUST=  0.00000000    ,
+ SHAPE(23)%TEXT='                                                                                                                        ',
+ SHAPE(24)%ITYPE=          0,
+ SHAPE(24)%ICOLOUR=          1,
+ SHAPE(24)%LINESTYLE=          1,
+ SHAPE(24)%LINEWIDTH=          1,
+ SHAPE(24)%IFILLSTYLE=          2,
+ SHAPE(24)%IUNITS=          1,
+ SHAPE(24)%IPLOTONPANEL=          0,
+ SHAPE(24)%XPOS= 0.500000000    ,
+ SHAPE(24)%YPOS= 0.500000000    ,
+ SHAPE(24)%XLEN=  1.00000000    ,
+ SHAPE(24)%YLEN=  1.00000000    ,
+ SHAPE(24)%ANGLE=  0.00000000    ,
+ SHAPE(24)%FJUST=  0.00000000    ,
+ SHAPE(24)%TEXT='                                                                                                                        ',
+ SHAPE(25)%ITYPE=          0,
+ SHAPE(25)%ICOLOUR=          1,
+ SHAPE(25)%LINESTYLE=          1,
+ SHAPE(25)%LINEWIDTH=          1,
+ SHAPE(25)%IFILLSTYLE=          2,
+ SHAPE(25)%IUNITS=          1,
+ SHAPE(25)%IPLOTONPANEL=          0,
+ SHAPE(25)%XPOS= 0.500000000    ,
+ SHAPE(25)%YPOS= 0.500000000    ,
+ SHAPE(25)%XLEN=  1.00000000    ,
+ SHAPE(25)%YLEN=  1.00000000    ,
+ SHAPE(25)%ANGLE=  0.00000000    ,
+ SHAPE(25)%FJUST=  0.00000000    ,
+ SHAPE(25)%TEXT='                                                                                                                        ',
+ SHAPE(26)%ITYPE=          0,
+ SHAPE(26)%ICOLOUR=          1,
+ SHAPE(26)%LINESTYLE=          1,
+ SHAPE(26)%LINEWIDTH=          1,
+ SHAPE(26)%IFILLSTYLE=          2,
+ SHAPE(26)%IUNITS=          1,
+ SHAPE(26)%IPLOTONPANEL=          0,
+ SHAPE(26)%XPOS= 0.500000000    ,
+ SHAPE(26)%YPOS= 0.500000000    ,
+ SHAPE(26)%XLEN=  1.00000000    ,
+ SHAPE(26)%YLEN=  1.00000000    ,
+ SHAPE(26)%ANGLE=  0.00000000    ,
+ SHAPE(26)%FJUST=  0.00000000    ,
+ SHAPE(26)%TEXT='                                                                                                                        ',
+ SHAPE(27)%ITYPE=          0,
+ SHAPE(27)%ICOLOUR=          1,
+ SHAPE(27)%LINESTYLE=          1,
+ SHAPE(27)%LINEWIDTH=          1,
+ SHAPE(27)%IFILLSTYLE=          2,
+ SHAPE(27)%IUNITS=          1,
+ SHAPE(27)%IPLOTONPANEL=          0,
+ SHAPE(27)%XPOS= 0.500000000    ,
+ SHAPE(27)%YPOS= 0.500000000    ,
+ SHAPE(27)%XLEN=  1.00000000    ,
+ SHAPE(27)%YLEN=  1.00000000    ,
+ SHAPE(27)%ANGLE=  0.00000000    ,
+ SHAPE(27)%FJUST=  0.00000000    ,
+ SHAPE(27)%TEXT='                                                                                                                        ',
+ SHAPE(28)%ITYPE=          0,
+ SHAPE(28)%ICOLOUR=          1,
+ SHAPE(28)%LINESTYLE=          1,
+ SHAPE(28)%LINEWIDTH=          1,
+ SHAPE(28)%IFILLSTYLE=          2,
+ SHAPE(28)%IUNITS=          1,
+ SHAPE(28)%IPLOTONPANEL=          0,
+ SHAPE(28)%XPOS= 0.500000000    ,
+ SHAPE(28)%YPOS= 0.500000000    ,
+ SHAPE(28)%XLEN=  1.00000000    ,
+ SHAPE(28)%YLEN=  1.00000000    ,
+ SHAPE(28)%ANGLE=  0.00000000    ,
+ SHAPE(28)%FJUST=  0.00000000    ,
+ SHAPE(28)%TEXT='                                                                                                                        ',
+ SHAPE(29)%ITYPE=          0,
+ SHAPE(29)%ICOLOUR=          1,
+ SHAPE(29)%LINESTYLE=          1,
+ SHAPE(29)%LINEWIDTH=          1,
+ SHAPE(29)%IFILLSTYLE=          2,
+ SHAPE(29)%IUNITS=          1,
+ SHAPE(29)%IPLOTONPANEL=          0,
+ SHAPE(29)%XPOS= 0.500000000    ,
+ SHAPE(29)%YPOS= 0.500000000    ,
+ SHAPE(29)%XLEN=  1.00000000    ,
+ SHAPE(29)%YLEN=  1.00000000    ,
+ SHAPE(29)%ANGLE=  0.00000000    ,
+ SHAPE(29)%FJUST=  0.00000000    ,
+ SHAPE(29)%TEXT='                                                                                                                        ',
+ SHAPE(30)%ITYPE=          0,
+ SHAPE(30)%ICOLOUR=          1,
+ SHAPE(30)%LINESTYLE=          1,
+ SHAPE(30)%LINEWIDTH=          1,
+ SHAPE(30)%IFILLSTYLE=          2,
+ SHAPE(30)%IUNITS=          1,
+ SHAPE(30)%IPLOTONPANEL=          0,
+ SHAPE(30)%XPOS= 0.500000000    ,
+ SHAPE(30)%YPOS= 0.500000000    ,
+ SHAPE(30)%XLEN=  1.00000000    ,
+ SHAPE(30)%YLEN=  1.00000000    ,
+ SHAPE(30)%ANGLE=  0.00000000    ,
+ SHAPE(30)%FJUST=  0.00000000    ,
+ SHAPE(30)%TEXT='                                                                                                                        ',
+ SHAPE(31)%ITYPE=          0,
+ SHAPE(31)%ICOLOUR=          1,
+ SHAPE(31)%LINESTYLE=          1,
+ SHAPE(31)%LINEWIDTH=          1,
+ SHAPE(31)%IFILLSTYLE=          2,
+ SHAPE(31)%IUNITS=          1,
+ SHAPE(31)%IPLOTONPANEL=          0,
+ SHAPE(31)%XPOS= 0.500000000    ,
+ SHAPE(31)%YPOS= 0.500000000    ,
+ SHAPE(31)%XLEN=  1.00000000    ,
+ SHAPE(31)%YLEN=  1.00000000    ,
+ SHAPE(31)%ANGLE=  0.00000000    ,
+ SHAPE(31)%FJUST=  0.00000000    ,
+ SHAPE(31)%TEXT='                                                                                                                        ',
+ SHAPE(32)%ITYPE=          0,
+ SHAPE(32)%ICOLOUR=          1,
+ SHAPE(32)%LINESTYLE=          1,
+ SHAPE(32)%LINEWIDTH=          1,
+ SHAPE(32)%IFILLSTYLE=          2,
+ SHAPE(32)%IUNITS=          1,
+ SHAPE(32)%IPLOTONPANEL=          0,
+ SHAPE(32)%XPOS= 0.500000000    ,
+ SHAPE(32)%YPOS= 0.500000000    ,
+ SHAPE(32)%XLEN=  1.00000000    ,
+ SHAPE(32)%YLEN=  1.00000000    ,
+ SHAPE(32)%ANGLE=  0.00000000    ,
+ SHAPE(32)%FJUST=  0.00000000    ,
+ SHAPE(32)%TEXT='                                                                                                                        ',
+ /
+&CALCOPTS
+ CALCSTRING= 35*'                                                                                ',
+ CALCLABEL= 35*'                                                                                ',
+ CALCUNITSLABEL= 35*'                                        ',
+ /
+&ANIMOPTS
+ NSEQ=          0,
+ NFRAMES=          0,
+ ISEQSTART= 6*0          ,
+ ISEQEND= 6*0          ,
+ ISEQTYPE= 6*0          ,
+ XMINSEQEND=  0.00000000    ,
+ XMAXSEQEND=  0.00000000    ,
+ YMINSEQEND=  0.00000000    ,
+ YMAXSEQEND=  0.00000000    ,
+ ANGLEZEND=  360.000000    ,
+ ANGLEYEND=  0.00000000    ,
+ ANGLEXEND=  0.00000000    ,
+ ZOBSERVEREND=  0.00000000    ,
+ TAUPARTDEPTHEND=  2000.00000    ,
+ ICOLCHANGE=          0,
+ XMINCOLEND=  0.00000000    ,
+ XMAXCOLEND=  0.00000000    ,
+ XSECPOS_NOMULTI_END=  0.00000000    ,
+ /
+wave1_00000.dat
+wave2_00000.dat
+wave3_00000.dat
+wave4_00000.dat
+wave5_00000.dat
+wave1_00001.dat
+wave2_00001.dat
+wave3_00001.dat
+wave4_00001.dat
+wave5_00001.dat
+wave1_00002.dat
+wave2_00002.dat
+wave3_00002.dat
+wave4_00002.dat
+wave5_00002.dat
+wave1_00003.dat
+wave2_00003.dat
+wave3_00003.dat
+wave4_00003.dat
+wave5_00003.dat
+wave1_00004.dat
+wave2_00004.dat
+wave3_00004.dat
+wave4_00004.dat
+wave5_00004.dat
+wave1_00005.dat
+wave2_00005.dat
+wave3_00005.dat
+wave4_00005.dat
+wave5_00005.dat
+wave1_00006.dat
+wave2_00006.dat
+wave3_00006.dat
+wave4_00006.dat
+wave5_00006.dat
+wave1_00007.dat
+wave2_00007.dat
+wave3_00007.dat
+wave4_00007.dat
+wave5_00007.dat
+wave1_00008.dat
+wave2_00008.dat
+wave3_00008.dat
+wave4_00008.dat
+wave5_00008.dat
+wave1_00009.dat
+wave2_00009.dat
+wave3_00009.dat
+wave4_00009.dat
+wave5_00009.dat
+wave1_00010.dat
+wave2_00010.dat
+wave3_00010.dat
+wave4_00010.dat
+wave5_00010.dat
+wave1_00011.dat
+wave2_00011.dat
+wave3_00011.dat
+wave4_00011.dat
+wave5_00011.dat
+wave1_00012.dat
+wave2_00012.dat
+wave3_00012.dat
+wave4_00012.dat
+wave5_00012.dat
+wave1_00013.dat
+wave2_00013.dat
+wave3_00013.dat
+wave4_00013.dat
+wave5_00013.dat
+wave1_00014.dat
+wave2_00014.dat
+wave3_00014.dat
+wave4_00014.dat
+wave5_00014.dat
+wave1_00015.dat
+wave2_00015.dat
+wave3_00015.dat
+wave4_00015.dat
+wave5_00015.dat
+wave1_00016.dat
+wave2_00016.dat
+wave3_00016.dat
+wave4_00016.dat
+wave5_00016.dat
+wave1_00017.dat
+wave2_00017.dat
+wave3_00017.dat
+wave4_00017.dat
+wave5_00017.dat
+wave1_00018.dat
+wave2_00018.dat
+wave3_00018.dat
+wave4_00018.dat
+wave5_00018.dat
+wave1_00019.dat
+wave2_00019.dat
+wave3_00019.dat
+wave4_00019.dat
+wave5_00019.dat
+wave1_00020.dat
+wave2_00020.dat
+wave3_00020.dat
+wave4_00020.dat
+wave5_00020.dat
+wave1_00021.dat
+wave2_00021.dat
+wave3_00021.dat
+wave4_00021.dat
+wave5_00021.dat
+wave1_00022.dat
+wave2_00022.dat
+wave3_00022.dat
+wave4_00022.dat
+wave5_00022.dat
+wave1_00023.dat
+wave2_00023.dat
+wave3_00023.dat
+wave4_00023.dat
+wave5_00023.dat
+wave1_00024.dat
+wave2_00024.dat
+wave3_00024.dat
+wave4_00024.dat
+wave5_00024.dat
+wave1_00025.dat
+wave2_00025.dat
+wave3_00025.dat
+wave4_00025.dat
+wave5_00025.dat
+wave1_00026.dat
+wave2_00026.dat
+wave3_00026.dat
+wave4_00026.dat
+wave5_00026.dat
+wave1_00027.dat
+wave2_00027.dat
+wave3_00027.dat
+wave4_00027.dat
+wave5_00027.dat
+wave1_00028.dat
+wave2_00028.dat
+wave3_00028.dat
+wave4_00028.dat
+wave5_00028.dat
+wave1_00029.dat
+wave2_00029.dat
+wave3_00029.dat
+wave4_00029.dat
+wave5_00029.dat
+wave1_00030.dat
+wave2_00030.dat
+wave3_00030.dat
+wave4_00030.dat
+wave5_00030.dat
+wave1_00031.dat
+wave2_00031.dat
+wave3_00031.dat
+wave4_00031.dat
+wave5_00031.dat
+wave1_00032.dat
+wave2_00032.dat
+wave3_00032.dat
+wave4_00032.dat
+wave5_00032.dat
+wave1_00033.dat
+wave2_00033.dat
+wave3_00033.dat
+wave4_00033.dat
+wave5_00033.dat
+wave1_00034.dat
+wave2_00034.dat
+wave3_00034.dat
+wave4_00034.dat
+wave5_00034.dat
+wave1_00035.dat
+wave2_00035.dat
+wave3_00035.dat
+wave4_00035.dat
+wave5_00035.dat
+wave1_00036.dat
+wave2_00036.dat
+wave3_00036.dat
+wave4_00036.dat
+wave5_00036.dat
+wave1_00037.dat
+wave2_00037.dat
+wave3_00037.dat
+wave4_00037.dat
+wave5_00037.dat
+wave1_00038.dat
+wave2_00038.dat
+wave3_00038.dat
+wave4_00038.dat
+wave5_00038.dat
+wave1_00039.dat
+wave2_00039.dat
+wave3_00039.dat
+wave4_00039.dat
+wave5_00039.dat
+wave1_00040.dat
+wave2_00040.dat
+wave3_00040.dat
+wave4_00040.dat
+wave5_00040.dat
+wave1_00041.dat
+wave2_00041.dat
+wave3_00041.dat
+wave4_00041.dat
+wave5_00041.dat
+wave1_00042.dat
+wave2_00042.dat
+wave3_00042.dat
+wave4_00042.dat
+wave5_00042.dat
+wave1_00043.dat
+wave2_00043.dat
+wave3_00043.dat
+wave4_00043.dat
+wave5_00043.dat
+wave1_00044.dat
+wave2_00044.dat
+wave3_00044.dat
+wave4_00044.dat
+wave5_00044.dat
+wave1_00045.dat
+wave2_00045.dat
+wave3_00045.dat
+wave4_00045.dat
+wave5_00045.dat
+wave1_00046.dat
+wave2_00046.dat
+wave3_00046.dat
+wave4_00046.dat
+wave5_00046.dat
+wave1_00047.dat
+wave2_00047.dat
+wave3_00047.dat
+wave4_00047.dat
+wave5_00047.dat
+wave1_00048.dat
+wave2_00048.dat
+wave3_00048.dat
+wave4_00048.dat
+wave5_00048.dat
+wave1_00049.dat
+wave2_00049.dat
+wave3_00049.dat
+wave4_00049.dat
+wave5_00049.dat
+wave1_00050.dat
+wave2_00050.dat
+wave3_00050.dat
+wave4_00050.dat
+wave5_00050.dat
+wave1_00051.dat
+wave2_00051.dat
+wave3_00051.dat
+wave4_00051.dat
+wave5_00051.dat
+wave1_00052.dat
+wave2_00052.dat
+wave3_00052.dat
+wave4_00052.dat
+wave5_00052.dat
+wave1_00053.dat
+wave2_00053.dat
+wave3_00053.dat
+wave4_00053.dat
+wave5_00053.dat
+wave1_00054.dat
+wave2_00054.dat
+wave3_00054.dat
+wave4_00054.dat
+wave5_00054.dat
+wave1_00055.dat
+wave2_00055.dat
+wave3_00055.dat
+wave4_00055.dat
+wave5_00055.dat
+wave1_00056.dat
+wave2_00056.dat
+wave3_00056.dat
+wave4_00056.dat
+wave5_00056.dat
+wave1_00057.dat
+wave2_00057.dat
+wave3_00057.dat
+wave4_00057.dat
+wave5_00057.dat
+wave1_00058.dat
+wave2_00058.dat
+wave3_00058.dat
+wave4_00058.dat
+wave5_00058.dat
+wave1_00059.dat
+wave2_00059.dat
+wave3_00059.dat
+wave4_00059.dat
+wave5_00059.dat
+wave1_00060.dat
+wave2_00060.dat
+wave3_00060.dat
+wave4_00060.dat
+wave5_00060.dat
+wave1_00061.dat
+wave2_00061.dat
+wave3_00061.dat
+wave4_00061.dat
+wave5_00061.dat
+wave1_00062.dat
+wave2_00062.dat
+wave3_00062.dat
+wave4_00062.dat
+wave5_00062.dat
+wave1_00063.dat
+wave2_00063.dat
+wave3_00063.dat
+wave4_00063.dat
+wave5_00063.dat
+wave1_00064.dat
+wave2_00064.dat
+wave3_00064.dat
+wave4_00064.dat
+wave5_00064.dat
+wave1_00065.dat
+wave2_00065.dat
+wave3_00065.dat
+wave4_00065.dat
+wave5_00065.dat
+wave1_00066.dat
+wave2_00066.dat
+wave3_00066.dat
+wave4_00066.dat
+wave5_00066.dat
+wave1_00067.dat
+wave2_00067.dat
+wave3_00067.dat
+wave4_00067.dat
+wave5_00067.dat
+wave1_00068.dat
+wave2_00068.dat
+wave3_00068.dat
+wave4_00068.dat
+wave5_00068.dat
+wave1_00069.dat
+wave2_00069.dat
+wave3_00069.dat
+wave4_00069.dat
+wave5_00069.dat
+wave1_00070.dat
+wave2_00070.dat
+wave3_00070.dat
+wave4_00070.dat
+wave5_00070.dat
+wave1_00071.dat
+wave2_00071.dat
+wave3_00071.dat
+wave4_00071.dat
+wave5_00071.dat
+wave1_00072.dat
+wave2_00072.dat
+wave3_00072.dat
+wave4_00072.dat
+wave5_00072.dat
+wave1_00073.dat
+wave2_00073.dat
+wave3_00073.dat
+wave4_00073.dat
+wave5_00073.dat
+wave1_00074.dat
+wave2_00074.dat
+wave3_00074.dat
+wave4_00074.dat
+wave5_00074.dat
+wave1_00075.dat
+wave2_00075.dat
+wave3_00075.dat
+wave4_00075.dat
+wave5_00075.dat
+wave1_00076.dat
+wave2_00076.dat
+wave3_00076.dat
+wave4_00076.dat
+wave5_00076.dat
+wave1_00077.dat
+wave2_00077.dat
+wave3_00077.dat
+wave4_00077.dat
+wave5_00077.dat
+wave1_00078.dat
+wave2_00078.dat
+wave3_00078.dat
+wave4_00078.dat
+wave5_00078.dat
+wave1_00079.dat
+wave2_00079.dat
+wave3_00079.dat
+wave4_00079.dat
+wave5_00079.dat
+wave1_00080.dat
+wave2_00080.dat
+wave3_00080.dat
+wave4_00080.dat
+wave5_00080.dat
+wave1_00081.dat
+wave2_00081.dat
+wave3_00081.dat
+wave4_00081.dat
+wave5_00081.dat
+wave1_00082.dat
+wave2_00082.dat
+wave3_00082.dat
+wave4_00082.dat
+wave5_00082.dat
+wave1_00083.dat
+wave2_00083.dat
+wave3_00083.dat
+wave4_00083.dat
+wave5_00083.dat
+wave1_00084.dat
+wave2_00084.dat
+wave3_00084.dat
+wave4_00084.dat
+wave5_00084.dat
+wave1_00085.dat
+wave2_00085.dat
+wave3_00085.dat
+wave4_00085.dat
+wave5_00085.dat
+wave1_00086.dat
+wave2_00086.dat
+wave3_00086.dat
+wave4_00086.dat
+wave5_00086.dat
+wave1_00087.dat
+wave2_00087.dat
+wave3_00087.dat
+wave4_00087.dat
+wave5_00087.dat
+wave1_00088.dat
+wave2_00088.dat
+wave3_00088.dat
+wave4_00088.dat
+wave5_00088.dat
+wave1_00089.dat
+wave2_00089.dat
+wave3_00089.dat
+wave4_00089.dat
+wave5_00089.dat
+wave1_00090.dat
+wave2_00090.dat
+wave3_00090.dat
+wave4_00090.dat
+wave5_00090.dat
+wave1_00091.dat
+wave2_00091.dat
+wave3_00091.dat
+wave4_00091.dat
+wave5_00091.dat
+wave1_00092.dat
+wave2_00092.dat
+wave3_00092.dat
+wave4_00092.dat
+wave5_00092.dat
+wave1_00093.dat
+wave2_00093.dat
+wave3_00093.dat
+wave4_00093.dat
+wave5_00093.dat
+wave1_00094.dat
+wave2_00094.dat
+wave3_00094.dat
+wave4_00094.dat
+wave5_00094.dat
+wave1_00095.dat
+wave2_00095.dat
+wave3_00095.dat
+wave4_00095.dat
+wave5_00095.dat
+wave1_00096.dat
+wave2_00096.dat
+wave3_00096.dat
+wave4_00096.dat
+wave5_00096.dat
+wave1_00097.dat
+wave2_00097.dat
+wave3_00097.dat
+wave4_00097.dat
+wave5_00097.dat
+wave1_00098.dat
+wave2_00098.dat
+wave3_00098.dat
+wave4_00098.dat
+wave5_00098.dat
+wave1_00099.dat
+wave2_00099.dat
+wave3_00099.dat
+wave4_00099.dat
+wave5_00099.dat
+wave1_00100.dat
+wave2_00100.dat
+wave3_00100.dat
+wave4_00100.dat
+wave5_00100.dat
