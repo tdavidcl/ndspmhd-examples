@@ -1,5 +1,8 @@
 This identical to the 1D sod shock tube tests, but in 2D:
 
+ make clean (be SURE to do this if you do this after the 1D test)
+ make
+
  ./2DSPMHD sshk.in
 
 To see the plots against the exact solutions, use:
@@ -48,3 +51,4 @@ lattice -- the results are much worse with a cubic lattice:
    one dimensional version)
 
 Added by Daniel Price, July 2010
+Revised Feb 2014
