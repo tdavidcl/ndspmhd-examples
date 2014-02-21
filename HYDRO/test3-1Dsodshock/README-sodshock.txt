@@ -7,7 +7,7 @@ Type "make clean" and "make" to re-compile the 1DSPMHD binary.
 Run the code using ./1DSPMHD sshk.in
 Or with output to a file: ./1DSPMHD sshk.in >& sshk.out &
 
-Plot the results using "nsplash sshk_0*.dat"
+Plot the results using "nsplash sshk_0*.dat -y 18"
 
 For the shock tube problem the file sshk.shk sets the left and
 right states of the Riemann problem, so edit this file to change the problem.
