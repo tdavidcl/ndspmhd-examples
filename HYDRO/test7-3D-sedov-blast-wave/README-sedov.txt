@@ -29,8 +29,10 @@ Things to try
   system in splash back to cartesian:
   (o menu, option 7), then plot the density rendered 
   by selecting 2, 1 and 8 as the y, x and rendered data.
+  
+  Or use the splash settings files with these preset:
 
-  nsplash -render 6 sedov_0*.dat
+  nsplash -p coldens -render 8 sedov_0*.dat
 
 - Plot a slice of the density:
 
@@ -49,13 +51,13 @@ Things to try
    axes and the colour bar by pressing backspace with the mouse over them
    in splash's interactive mode)
 
-- Try a calculation that includes artificial conductivity
+- Try a calculation that does not include artificial conductivity
 
- ./3DSPMHD sedovcond.in >& sedovcond.out &
+ ./3DSPMHD sedovnocond.in >& sedovnocond.out &
 
   (As for our 1D shock tubes, adding thermal conductivity improves the
   treatment of the contact discontinuity. In this case the radial profiles
-  of density and thermal energy also look much less noisy.)
+  of density and thermal energy are much noisier.)
 
 - Try a calculation at higher resolution (up to around 100^3 is manageable
   if you leave it for a few hours), by changing the initial particle separation:
@@ -63,3 +65,4 @@ Things to try
   0.010000000                      ! particle separation
 
 Added by Daniel Price, July 2010
+Revised Feb 2014
