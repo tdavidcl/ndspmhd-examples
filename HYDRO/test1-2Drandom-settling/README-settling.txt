@@ -19,7 +19,7 @@ Things to try
  (use asplash -e random.ev)
 
 -Now try using a more "accurate" pressure term, by using iprterm=-2:
- -2  ! type of pressure term
+ iprterm =   -2  ! type of pressure term
  
  this is already done in the file "rpsph.in":
  

@@ -17,9 +17,9 @@ Things to try
 -look at the density as a function of x (fix the plot limits)
 
 -now either adjust the parameter 
- 3 1.500   1.000E-03                ! variable h, initial h factor
+ hfact =       1.500    ! h in units of mean particle spacing
  to give
- 3 1.200   1.000E-03                ! variable h, initial h factor
+ hfact =       1.200    ! h in units of mean particle spacing
 
 or simply run ./2DSPMHD nopair.in, and show that the pairing does
 not occur if you use the "correct" value of h=1.2 (m/rho)^(1/ndim)
@@ -36,7 +36,7 @@ not occur if you use the "correct" value of h=1.2 (m/rho)^(1/ndim)
  
 -Try using a very low neighbour number with the cubic lattice,
  e.g. 
- 3 1.100   1.000E-03                ! variable h, initial h factor
+  hfact =       1.100    ! h in units of mean particle spacing
 
  (There is no pairing instability in this case, but notice how the cubic lattice 
   shifts to the close packed lattice after some time -- this is because
@@ -48,16 +48,16 @@ not occur if you use the "correct" value of h=1.2 (m/rho)^(1/ndim)
 --finally, here is the "right way" to increase the neighbour number
   without making h larger or causing pairing instabilities:
   Change the kernel function from the cubic to the quintic
- 3   ! kernel type (0: cubic spline, 3:quintic)
+   ikernel =           3    ! kernel type (0: cubic spline, 3:quintic)
   As previously, keep the ratio of h to particle spacing the same:
- 3 1.200   1.000E-03                ! variable h, initial h factor
+  hfact =       1.200    ! h in units of mean particle spacing
 
  but notice now that in the header, the number of neigbours is given by:
        Number of neighbours =    40.72
  compared to using cubic spline with the same value of h = 1.2*(m/rho)^(1/ndim):
        Number of neighbours =    18.10
 
- The difference is because the M5 Quintic extends to 3h instead of 2h.
+ The difference is because the M6 Quintic extends to 3h instead of 2h.
 
  The important point is that we have increased the "smoothness" of the summations
 by using more neighbours, but we have *NOT* changed the value of h. This is
@@ -69,3 +69,4 @@ neighbours with the cubic spline is emphatically the WRONG way.
 parameter. Unfortunately for the world, it is...
 
 Added by Daniel Price, July 2010
+Updated for v2.1, April 2015
