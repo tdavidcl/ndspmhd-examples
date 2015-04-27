@@ -31,3 +31,4 @@ Things to try
     This is because the method is no longer Hamiltonian.
 
 Added by Daniel Price, July 2010
+Updated for v2.1, April 2015
