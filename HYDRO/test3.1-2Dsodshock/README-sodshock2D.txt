@@ -30,7 +30,7 @@ lattice -- the results are much worse with a cubic lattice:
   Type "make edit" and change the call on lines 209 and 217 to
        call set_uniform_cartesian(1,psep...)
   instead of
-       call set_uniform_cartesian(1,psep...)
+       call set_uniform_cartesian(2,psep...)
 
   Then re-run the calculations.
   
@@ -52,3 +52,4 @@ lattice -- the results are much worse with a cubic lattice:
 
 Added by Daniel Price, July 2010
 Revised Feb 2014
+Updated for v2.1, April 2015
