@@ -21,20 +21,30 @@ Things to try
  
   and plot the results against the exact solution with splash:
   
- nsplash blast_0*.dat -y 18
+ nsplash blast_0*.dat -y 17
 
 Here we have applied viscosity using a switch (with alphamin = 0.1), and
 a small amount of thermal conductivity:
- 2 0.100  0.100  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       2      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       0.100    ! minimum alpha (viscosity)
+           alphaumin =       0.100    ! minimum alphau (conductivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           2    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+        avdecayconst =       0.100    ! decay constant in av switch (0.1-0.2)
 
 In this case it is easy to over-smear the contact discontinuity by adding
 too much thermal conductivity.
 
 - As previously, you can see the blip that occurs in the absence of thermal
 conductivity:
- 2 0.100  0.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       2      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       0.100    ! minimum alpha (viscosity)
+           alphaumin =       0.000    ! minimum alphau (conductivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           2    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+        avdecayconst =       0.100    ! decay constant in av switch (0.1-0.2)
 
  (Another way to avoid this used by many authors is to smooth the profiles
   across the initial discontinuity -- this is effectively "manually" 
@@ -51,7 +61,7 @@ conductivity:
 - The strong blast also starts to show up some differences between evolving the
 total energy equation and the thermal energy equation, so try a run evolving
 the total energy:
- 3 1.000                            ! type of energy equation, polyk(for iener=0)
+               iener =           3    ! type of energy equation
 
  (this shows a minor improvement around the pressure "blip" at the contact
  discontinuity)
@@ -60,3 +70,4 @@ the total energy:
 jump in velocity can be resolved by as little as 3 particles.
 
 Added by Daniel Price, July 2010
+Updated for v2.1, April 2015
