@@ -22,8 +22,12 @@ Things to try
   "nsplash sshk_0*.dat -y 18" to plot this.
 
  The default setup uses "standard" artificial viscosity settings:
- 2 1.000  0.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       0      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       1.000    ! minimum alpha (viscosity)
+           alphaumin =       0.000    ! minimum alphau (conductivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           0    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
  (in other words, constant coefficients, with alpha=1, beta=2 and
   no artificial thermal conductivity)
 
@@ -37,11 +41,11 @@ Things to try
   ./1DSPMHD sshkcty.in
   
   The differences are the setting of the density evolution:
- 1   1000000   250                  ! type of cty equation (0:direct sum 1:time deriv), ndirect, maxdensits
+                icty =           1    ! type of cty equation (0:direct sum 1:time deriv)
 
   and to use this we also need to change the type of kernel averaging and the way h is computed:
-2                                   ! type of kernel averaging (1:average h, 2:average grad wab 3:springel/hernquist)
- 2 1.200   1.000E-05                ! variable h, initial h factor, h tolerance
+             ikernav =           2    ! type of kernel averaging (1:average h, 2:average grad wab 3:springel/hernquist)
+               ihvar =           2    ! type of variable smoothing length prediction
 
  If you like, you can plot the results together with the first calculation using
  
@@ -63,11 +67,11 @@ Things to try
   ./1DSPMHD sshk.in
 
 where, to evolve the thermal energy, use:
- 2 1.000                            ! type of energy equation, polyk(for iener=0)
+               iener =           2    ! type of energy equation
 for total energy, use:
- 3 1.000                            ! type of energy equation, polyk(for iener=0)
+               iener =           3    ! type of energy equation
 and for entropy use:
- 1 1.000                            ! type of energy equation, polyk(for iener=0)
+               iener =           1    ! type of energy equation
 
   There is no difference, because total energy is spatially conserved in all 3 cases, provided that
  the equations are formulated consistently. The only remaining differences are due to the 
@@ -75,12 +79,16 @@ and for entropy use:
 
 - Next, go back to using the thermal energy equation:
 
- 2 1.000                            ! type of energy equation, polyk(for iener=0)
+                iener =           2    ! type of energy equation
 
  but now turn on some artificial thermal conductivity, using:
  
- 2 1.000  1.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       0      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       1.000    ! minimum alpha (viscosity)
+           alphaumin =       1.000    ! minimum alphau (conductivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           0    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
 
  This is given in the input file "sshkcond.in"
 
@@ -93,8 +101,12 @@ and for entropy use:
   (see Price & Monaghan 2005 for the implementation used in this code).
   In this case we specify only the *minimum* values for alpha_viscous and alpha_conductivity:
 
- 2 0.100  0.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       2      2      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       0.100    ! minimum alpha (viscosity)
+           alphaumin =       1.000    ! minimum alphau (conductivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           2    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
 
  and turn the switches "on". Note that we use a non-zero alpha(min) = 0.1 as recommended by M&M97
  (if you like, compare with a calculation using alpha_min = 0). These settings are set if you use:
@@ -108,8 +120,10 @@ and for entropy use:
 viscosity in the simulation in regions where we want the flow to be inviscid.
 
 - For the adventurous, you may also wish to try "Godunov SPH". For this, set the viscosity to negative
- -1 0.000  0.000  0.000  0.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       0      0      0  0.000       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =          -1    ! type of artificial viscosity
+            alphamin =       0.000    ! minimum alpha (viscosity)
+           alphaumin =       0.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.000    ! minimum alphaB (resistivity)
 
  ./1DSPMHD sshkgsph.in
 
@@ -124,3 +138,4 @@ viscosity in the simulation in regions where we want the flow to be inviscid.
  in place of viscosity terms.
 
 Added by Daniel Price, July 2010
+Updated for v2.1, April 2015
