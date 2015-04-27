@@ -32,7 +32,7 @@ Things to try
   
   Or use the splash settings files with these preset:
 
-  nsplash -p coldens -render 8 sedov_0*.dat
+  nsplash -p coldens -r 8 -dev /xw    sedov_0*.dat
 
 - Plot a slice of the density:
 
@@ -66,3 +66,4 @@ Things to try
 
 Added by Daniel Price, July 2010
 Revised Feb 2014
+Checked and updated April 2015
