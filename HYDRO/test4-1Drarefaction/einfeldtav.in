@@ -30,11 +30,11 @@
 
 # options affecting momentum equation and shock-capturing terms
      iexternal_force =           0    ! external force (1: toy star, 2:1/r^2 )
-                 iav =           0    ! type of artificial viscosity
-            alphamin =       0.000    ! minimum alpha (viscosity)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       1.000    ! minimum alpha (viscosity)
            alphaumin =       0.000    ! minimum alphau (conductivity)
            alphaBmin =       0.000    ! minimum alphaB (resistivity)
-                beta =       0.000    ! beta in artificial viscosity
+                beta =       2.000    ! beta in artificial viscosity
               iavlim =           0    ! use viscosity switch
              iavlimu =           0    ! use conductivity switch
              iavlimB =           0    ! use resistivity switch

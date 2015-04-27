@@ -21,11 +21,17 @@ Things to try
  
   and plot the results with splash:
   
- nsplash einfeldt_0*.dat -y 18
+ nsplash einfeldt_0*.dat -y 17 -dev /xw
 
 Note that this problem has been run without *any* artificial viscosity terms:
- 0 0.000  0.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       0      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           0    ! type of artificial viscosity
+            alphamin =       0.000    ! minimum alpha (viscosity)
+           alphaumin =       0.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.000    ! minimum alphaB (resistivity)
+                beta =       0.000    ! beta in artificial viscosity
+              iavlim =           0    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+             iavlimB =           0    ! use resistivity switch
 
 ...because artificial viscosity is off in any case for receding particles.
 
@@ -37,6 +43,18 @@ some viscosity). If you like, see what difference adding artificial
 viscosity makes here:
 
 e.g.
- 2 1.000  0.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
+                iav =            2    ! type of artificial viscosity
+            alphamin =       1.000    ! minimum alpha (viscosity)
+           alphaumin =       0.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.000    ! minimum alphaB (resistivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           0    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+             iavlimB =           0    ! use resistivity switch
+
+which are preset in "einfeldtav.in":
+
+ ./1DSPMHD einfeldtav.in
 
 Added by Daniel Price, July 2010
+Update for v2.1, April 2015
