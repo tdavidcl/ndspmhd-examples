@@ -60,3 +60,4 @@ Things to try
 For more details on this problem, see Price (2008) J. Comp. Phys. 227, 10040
 
 Added by Daniel Price, July 2010
+Checked and updated for v2.1, April 2015
