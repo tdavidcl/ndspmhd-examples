@@ -24,6 +24,8 @@ Things to try
 - Try running the problem with no magnetic fields to see what difference MHD
   makes:
 
- 0    0                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           0    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           0    ! MHD force type(1:vector 2:tensor)
 
 Added by Daniel Price, July 2010
+Updated and checked for v2.1, April 2015
