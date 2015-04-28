@@ -31,7 +31,7 @@ Things to try
 
   or to see the magnetic field:
 
-  "nsplash morstang_0*.dat -render 7 -vec 13"
+  "nsplash morstang_0*.dat -r 7 -vec 13"
  
  (this setup is at a resolution of 128^3, uses B as the evolved
   magnetic variable, and applies viscosity thermal conductivity
@@ -52,3 +52,4 @@ Things to try
   (compare this with the lower resolution calculations)
 
 Added by Daniel Price, July 2010
+Updated and checked for v2.1, April 2015
