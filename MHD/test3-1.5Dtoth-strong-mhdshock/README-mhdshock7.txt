@@ -13,19 +13,22 @@ Things to try
  (I have already set up the "multiplot" to plot this problem together with
   the exact solution at the end time, so use:
 
-  "nsplash mshk7_0*.dat -y 27" to plot this.
+  "nsplash mshk7_0*.dat -y 26" to plot this.
   
 - As previously try playing around with the viscosity,
   thermal conductivity and resistivity parameters.
   
 - For this problem I have used B/rho as the evolved variable:
-  1    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           1    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
 
   but you could try with the vector potential:
-  -2    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           -2    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
 
   or using B:
-  11    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =          11    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
 
   (in the latter case there is an error in the By jump at the shock:
    this is because the "dB/dt" uses the non-integral form of the
@@ -35,3 +38,4 @@ Things to try
    density coincident with the jump in the magnetic field).
 
 Added by Daniel Price, July 2010
+Updated and checked for v2.1, April 2015
