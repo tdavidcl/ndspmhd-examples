@@ -25,3 +25,4 @@ Things to try
   the loop always returning to it's starting position unchanged.
 
 Added by Daniel Price, July 2010
+Updated and checked for v2.1, April 2015
