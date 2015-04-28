@@ -36,8 +36,14 @@ Things to try
   
  The default setup applies artificial viscosity using a switch, and fixed
  parameters for artificial thermal conductivity (1.0) and resistivity (0.5):
- 2 0.100  1.000  0.500  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       2      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       0.100    ! minimum alpha (viscosity)
+           alphaumin =       1.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.500    ! minimum alphaB (resistivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           2    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+             iavlimB =           0    ! use resistivity switch
 
  (Resistivity treats the "shearing" discontinuities that occur because
   of jumps in the transverse B field. An alternative (that does give nicer
@@ -55,7 +61,8 @@ Things to try
  
  By default we have run this problem with the conservative MHD force ("2" below)
  and by using the magnetic field B as the evolved variable ("11" below):
-11    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =          11    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
 
  The conservative MHD force is unstable for this problem (since 
  magnetic pressure exceeds gas pressure), but the
@@ -67,34 +74,60 @@ Things to try
  (...)
 
 - Try running the problem evolving B/rho as the evolved variable instead of B:
-  1    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           1    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
 
  (basically there should be very little difference here)
 
 - Also try running with the Morris force instead of the stress subtraction
   (see Price & Monaghan 2005 for details of this):
-  11    5                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =          11    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           5    ! MHD force type(1:vector 2:tensor)
 
   This is implemented in the "mshk1morris.in" file:
   
   ./1DSPMHD mshk1morris.in
   
+  Notice in particular that the thermal energy no longer overshoots
+  
 - Try some experiments changing the viscosity, thermal conductivity
   and resistivity parameters:
- 2 0.100  1.000  0.500  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       2      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       0.100    ! minimum alpha (viscosity)
+           alphaumin =       1.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.500    ! minimum alphaB (resistivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           2    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+             iavlimB =           0    ! use resistivity switch
+        avdecayconst =       0.100    ! decay constant in av switch (0.1-0.2)
 
   for example, using time-dependent parameters for all 3:
- 2 0.100  0.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       2      2      2  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       0.100    ! minimum alpha (viscosity)
+           alphaumin =       0.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.000    ! minimum alphaB (resistivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           2    ! use viscosity switch
+             iavlimu =           2    ! use conductivity switch
+             iavlimB =           2    ! use resistivity switch
+        avdecayconst =       0.100    ! decay constant in av switch (0.1-0.2)
 
   or fixed parameters for all 3:
- 2 1.000  1.000  1.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       0      0      0  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       1.000    ! minimum alpha (viscosity)
+           alphaumin =       1.000    ! minimum alphau (conductivity)
+           alphaBmin =       1.000    ! minimum alphaB (resistivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           0    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+             iavlimB =           0    ! use resistivity switch
+        avdecayconst =       0.100    ! decay constant in av switch (0.1-0.2)
 
 - Finally you might like to see how using the vector potential does on this problem:
   (see e.g. Rosswog & Price 2007, Price 2010):
-  -2    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           2    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
 
   This is implemented in the "mshk1vecp.in" file:
   
@@ -108,3 +141,4 @@ Things to try
    these kind of test problems).
 
 Added by Daniel Price, July 2010
+Updated for v2.1, April 2015
