@@ -4,8 +4,8 @@
                 psep =       0.020    ! particle separation
 
 # options affecting timestepping/output
-                tmax =         50.    ! maximum time
-                tout =       0.050    ! time between outputs
+                tmax =         10.    ! maximum time
+                tout =       0.10    ! time between outputs
                 nmax =     1000000    ! maximum number of timesteps
                 nout =          -1    ! number of timesteps between outputs (-1=ignore)
               C_cour =       0.300    ! Courant factor on timestep
