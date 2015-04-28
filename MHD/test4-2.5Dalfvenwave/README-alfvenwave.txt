@@ -23,7 +23,7 @@ Things to try
 
   Plot the results with:
 
-  "nsplash malfven_0*.dat -y 27"
+  "nsplash munstable_0*.dat -y 27"
   
   (you will observe that with the conservative-but-unstable force,
    the particles rapidly attract each other in "lines" perpendicular
@@ -50,7 +50,8 @@ Things to try
 
   For example, one way to stabilise the force is simply to subtract this term.
   This is implemented as MHD force 6:
-  1    6                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           1    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           6    ! MHD force type(1:vector 2:tensor)
   
   which is identical to the conservative force (2 or 3), but explicitly
   subtracts the B(div B) term (have a look in ratesND_mhd.f90 to see
@@ -59,14 +60,16 @@ Things to try
   Another way is to use a force such as that proposed by Morris
   which vanishes when the anisotropic part of the stress tensor is
   constant. This is implemented as force number 5:
-  1    5                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           1    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           5    ! MHD force type(1:vector 2:tensor)
 
   (note that all of the above approaches do not exactly conserve
    momentum any more)
 
   Another approach that we have used for the previous problems is to 
   subtract the maximum (constant) value from the stress:
-  1    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           1    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
  
   where the correction is indicated by the diagnostic output:
  
@@ -78,3 +81,4 @@ Things to try
   This correction conserves momentum but not energy.
 
 Added by Daniel Price, July 2010
+Updated and checked for v2.1, April 2015
