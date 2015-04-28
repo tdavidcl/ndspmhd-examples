@@ -17,9 +17,9 @@
              ndirect =     1000000    ! perform direct sum every n timesteps (if icty=1)
           maxdensits =         250    ! maximum number of density iterations
                ihvar =           2    ! type of variable smoothing length prediction
-               hfact =       1.000    ! h in units of mean particle spacing
+               hfact =       1.200    ! h in units of mean particle spacing
                 tolh =   1.000E-04    ! tolerance on h-rho iterations
-             ikernel =           3    ! kernel type (0: cubic spline, 3:quintic)
+             ikernel =           0    ! kernel type (0: cubic spline, 3:quintic)
              ikernav =           3    ! type of kernel averaging (1:average h, 2:average grad wab 3:springel/hernquist)
           usenumdens =           F    ! Use number density formulation of gradh
 
@@ -33,7 +33,7 @@
                  iav =           2    ! type of artificial viscosity
             alphamin =       0.100    ! minimum alpha (viscosity)
            alphaumin =       1.000    ! minimum alphau (conductivity)
-           alphaBmin =       0.500    ! minimum alphaB (resistivity)
+           alphaBmin =       1.000    ! minimum alphaB (resistivity)
                 beta =       2.000    ! beta in artificial viscosity
               iavlim =           2    ! use viscosity switch
              iavlimu =           0    ! use conductivity switch
