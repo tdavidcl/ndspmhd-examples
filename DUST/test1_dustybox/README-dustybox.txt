@@ -17,11 +17,17 @@ Type "make cleanallfiles" to remove all runtime files from the directory
 Things to try
 --------------
 -You can run this test with both the two-fluid and one-fluid methods:
- 2  1  1   0.1  0               ! dust (0:off 1:one-f, 2:two-f), drag type,drag form, Kdrag,ismooth
+# options affecting dust
+               idust =           2    ! dust (0:off 1:one-f 2:two-f 3:diff-onef-1st 4:diff-onef-2ndderivs)
+        idrag_nature =           1    ! drag type (0=none 1=const K 2=const ts 3=Epstein)
+               Kdrag =       0.100    ! drag coeff (idrag=1) or ts (idrag=2) or grain size in cm (idrag=3)
 
 or:
 
- 1  1  1   0.1  0               ! dust (0:off 1:one-f, 2:two-f), drag type,drag form, Kdrag,ismooth
+# options affecting dust
+               idust =           1    ! dust (0:off 1:one-f 2:two-f 3:diff-onef-1st 4:diff-onef-2ndderivs)
+        idrag_nature =           1    ! drag type (0=none 1=const K 2=const ts 3=Epstein)
+               Kdrag =       0.100    ! drag coeff (idrag=1) or ts (idrag=2) or grain size in cm (idrag=3)
 
  this is already done in the files "onefK*.in"
  
@@ -30,5 +36,13 @@ or:
  
 You should see that both the one fluid and the two fluid methods match
 the exact solution to very high accuracy.
+
+You can also look at the velocities on all the particles as a function of time:
+ nsplash onefK0.1_0*.dat -y 2 -x 1 -dev /xw
+ 
+Notice that for the one fluid method the "gas" and "dust" are both just fake copies
+of the mixture particles, with gas and dust properties. That is, only one set of
+particles is actually used for the calculation
   
 Added by Daniel Price, Feb 2014
+Updated for v2.1, April 2015
