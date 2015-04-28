@@ -20,11 +20,17 @@ Things to try
  (I have already set up the "multiplot" to plot this problem together with
   the exact solution at the end time, so use:
 
-  "nsplash mshk3_0*.dat -y 27" to plot this.
+  "nsplash mshk3_0*.dat -y 26" to plot this.
   
  In ths case we have applied both viscosity and resistivity using switches:
- 2 0.100  1.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphab(min), beta
-       2      0      2  0.100       ! use av, au, ab limiter, constant for this(0.1-0.2)
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       0.100    ! minimum alpha (viscosity)
+           alphaumin =       1.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.000    ! minimum alphaB (resistivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           2    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+             iavlimB =           2    ! use resistivity switch
 
 - Try playing around with the parameters for each of these, and have a look
   at which waves are affected by each parameter(specifically viscosity, 
@@ -32,12 +38,16 @@ Things to try
   
 - As with the previous problem you could also try running with 
   different force terms and evolved variables, e.g. to use the Morris force:
-  11    5                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =          11    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           5    ! MHD force type(1:vector 2:tensor)
 
   or the vector potential + Morris force
-  -2    5                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =          -2    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           5    ! MHD force type(1:vector 2:tensor)
 
   or B/rho using the conservative force
-  1    2                             ! magnetic field (0:off 1:on) and force algorithm(1:vector 2:tensor)
+                imhd =           1    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
 
 Added by Daniel Price, July 2010
+Updated for v2.1, April 2015
