@@ -1,23 +1,71 @@
-  0.0010000000                      ! particle separation
-  0.200    0.010    1000000    -1   ! tmax, tout, nmax, nout
-1.666666666700                      ! gamma 
- 2 1.000                            ! type of energy equation, polyk(for iener=0)
- 0   1000000   250                  ! type of cty equation (0:direct sum 1:time deriv), ndirect, maxdensits
- 0                                  ! type of pressure term (0:normal 1:pa+pb/rhoa*rhob 2:hernquist/katz )
- 2 1.000  1.000  0.000  2.000       ! viscosity type, alpha(min), alphau(min), alphaB(min), beta
-       0      0      0  0.100       ! use av, au, aB limiter, decay constant for this(0.1-0.2)
-3                                   ! type of kernel averaging (1:average h, 2:average grad wab 3:springel/hernquist)
- 3 1.200   1.000E-04                ! variable h, initial h factor, h tolerance
- 1                                  ! dump ghost particles? (0: no 1: yes)
- 0    2                             ! MHD (0:no 1-10:B >10:B/rho <0:A -3:GEPs), force type(1:vector 2:tensor)
- 0  0.100                           ! divergence correction method (0:none 1:projection 2: hyperbolic/parabolic)
-0  0.800                            ! resistivity (0:off 1:explicit 2:implicit), eta
-0  0.000                            ! use xsph, parameter
- 0 0.000E+00                        ! self-gravity, fixed softening length
- 0.0000  0.0000  0.0000             ! artificial damping (0.0 or few percent)
-  0                                 ! kernel type (0: cubic spline, 3:quintic)
- 0                                  ! external force (1: toy star, 2:1/r^2 )
- 0.300    0.250                     ! C_cour, C_force
-F                                   ! Use number density formulation of gradh
- 2  1  1 1000.000E+00  0               ! dust (0:off 1:one-f, 2:two-f), drag type,drag form, Kdrag,ismooth
-0 0.000E+00 0.000E+00               ! real viscosity, shear param (nu), bulk param (zeta)
+# input file for ndspmhd, options not present assume default values
+
+# options affecting setup
+                psep =       0.001    ! particle separation
+
+# options affecting timestepping/output
+                tmax =       0.200    ! maximum time
+                tout =       0.010    ! time between outputs
+                nmax =     1000000    ! maximum number of timesteps
+                nout =          -1    ! number of timesteps between outputs (-1=ignore)
+              C_cour =       0.300    ! Courant factor on timestep
+             C_force =       0.250    ! Factor in force timestep condition
+          idumpghost =           1    ! dump ghost particles? (0: no 1: yes)
+
+# options affecting density calculation
+                icty =           0    ! type of cty equation (0:direct sum 1:time deriv)
+             ndirect =     1000000    ! perform direct sum every n timesteps (if icty=1)
+          maxdensits =         250    ! maximum number of density iterations
+               ihvar =           3    ! type of variable smoothing length prediction
+               hfact =       1.200    ! h in units of mean particle spacing
+                tolh =   1.000E-04    ! tolerance on h-rho iterations
+             ikernel =           0    ! kernel type (0: cubic spline, 3:quintic)
+             ikernav =           3    ! type of kernel averaging (1:average h, 2:average grad wab 3:springel/hernquist)
+          usenumdens =           F    ! Use number density formulation of gradh
+
+# options affecting equation of state, energy equation
+               iener =           2    ! type of energy equation
+               gamma =  1.66666667    ! adiabatic index
+               polyk =       1.000    ! polytropic constant if iener=0
+
+# options affecting momentum equation and shock-capturing terms
+     iexternal_force =           0    ! external force (1: toy star, 2:1/r^2 )
+                 iav =           2    ! type of artificial viscosity
+            alphamin =       1.000    ! minimum alpha (viscosity)
+           alphaumin =       1.000    ! minimum alphau (conductivity)
+           alphaBmin =       0.000    ! minimum alphaB (resistivity)
+                beta =       2.000    ! beta in artificial viscosity
+              iavlim =           0    ! use viscosity switch
+             iavlimu =           0    ! use conductivity switch
+             iavlimB =           0    ! use resistivity switch
+        avdecayconst =       0.100    ! decay constant in av switch (0.1-0.2)
+                damp =       0.000    ! artificial damping (0.0 or few percent)
+               dampz =       0.000    ! artificial damping in z (0.0 or few percent)
+               dampr =       0.000    ! artificial damping in r (0.0 or few percent)
+               ixsph =           0    ! use XSPH (0:off 1:on)
+             xsphfac =       0.000    ! factor for XSPH correction
+             iprterm =           0    ! type of pressure term (0:normal 1:pa+pb/rhoa*rhob 2:hernquist/katz
+
+# options affecting magnetic fields
+                imhd =           0    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+           imagforce =           2    ! MHD force type(1:vector 2:tensor)
+           idivbzero =           0    ! divergence correction method (0:none 1:projection 2: hyperbolic/parabolic)
+        psidecayfact =       0.100    ! decay factor in hyperbolic/parabolic cleaning
+             iresist =           0    ! resistivity (0:off 1:explicit 2:implicit)
+              etamhd =       0.800    ! eta for resistivity
+          iambipolar =           0    ! ambipolar diffusion
+
+# options affecting dust
+               idust =           2    ! dust (0:off 1:one-f 2:two-f 3:diff-onef-1st 4:diff-onef-2ndderivs)
+        idrag_nature =           1    ! drag type (0=none 1=const K 2=const ts 3=Epstein)
+               Kdrag =       1000.    ! drag coeff (idrag=1) or ts (idrag=2) or grain size in cm (idrag=3)
+    use_sqrtdustfrac =           F    ! evolve s=sqrt(rho*eps) instead of eps?
+
+# options affecting self-gravity
+            igravity =           0    ! self-gravity
+               hsoft =       0.000    ! fixed softening length
+
+# options affecting physical viscosity
+               ivisc =           0    ! use physical viscosity?
+           shearvisc =       0.000    ! shear viscosity (nu)
+            bulkvisc =       0.000    ! bulk viscosity (zeta)
