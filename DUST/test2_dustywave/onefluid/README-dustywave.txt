@@ -22,6 +22,7 @@ the red lines
 
 Note: To automatically read the drag for each input file correctly,
 and hence plot the right exact solution, you will need to have
-splash v2.4.0 or later
+splash v2.5.2 or later
   
 Added by Daniel Price, Feb 2014
+Updated and checked for v2.1, April 2015
