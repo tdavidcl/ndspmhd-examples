@@ -39,4 +39,13 @@ A more quantitative comparison of the dust density profile can be obtained by pl
 
 nsplash -y 7 -x 2 -dev /xw
 
+Finally you can change the grain size (in cm) by setting the "Kdrag" variable:
+
+# options affecting dust
+               idust =           3    ! dust (0:off 1:one-f 2:two-f 3:diff-onef-1st 4:diff-onef-2ndderivs)
+        idrag_nature =           3    ! drag type (0=none 1=const K 2=const ts 3=Epstein)
+               Kdrag =       0.100    ! drag coeff (idrag=1) or ts (idrag=2) or grain size in cm (idrag=3)
+
+(the default is 0.1cm = 1mm)
+
 Added by Daniel Price for v2.1, May 2015
