@@ -92,6 +92,19 @@ Things to try
 
  ./1DSPMHD onef-nodragalt.in
  nsplash onef-nodrag_*.dat -y 22 -dev /xw
+ 
+ - Finally, you can run the high drag case with the "dust diffusion" algorithm
+   as described in Price & Laibe (2015)
+ 
+ ./1DSPMHD diffusion-K1000.in
+ 
+ # options affecting dust
+               idust =           4    ! dust (0:off 1:one-f 2:two-f 3:diff-onef-1st 4:diff-onef-2ndderivs)
+        idrag_nature =           1    ! drag type (0=none 1=const K 2=const ts 3=Epstein)
+               Kdrag =       1000.    ! drag coeff (idrag=1) or ts (idrag=2) or grain size in cm (idrag=3)
+    use_sqrtdustfrac =           F    ! evolve s=sqrt(rho*eps) instead of eps?
+
+ This requires only explicit timestepping to get the solution correct
   
 Added by Daniel Price, Feb 2014
 Updated for v2.1, April 2015
