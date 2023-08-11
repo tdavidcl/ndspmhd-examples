@@ -45,13 +45,16 @@
                ixsph =           0    ! use XSPH (0:off 1:on)
              xsphfac =       0.000    ! factor for XSPH correction
              iprterm =           0    ! type of pressure term (0:normal 1:pa+pb/rhoa*rhob 2:hernquist/katz
+             ismooth =           0    ! smooth initial conditions?
 
 # options affecting magnetic fields
-                imhd =           0    ! MHD (0:no 1-10:B/rho >10:B <0:A)
+                imhd =           0    ! MHD (0:no 1-10:B/rho >10:B <0:A -3:GEPs)
            imagforce =           2    ! MHD force type(1:vector 2:tensor)
            idivbzero =           0    ! divergence correction method (0:none 1:projection 2: hyperbolic/parabolic)
         psidecayfact =       0.100    ! decay factor in hyperbolic/parabolic cleaning
-             iresist =           0    ! resistivity (0:off 1:explicit 2:implicit)
+        nsteps_remap =           0    ! remapping interval (0:never)
+   iuse_exact_derivs =           0    ! use exact derivatives for MHD (0:off 1:on)
+             iresist =           0    ! resistivity (0:off 1:explicit 2:implicit 3:variable eta 4:two first derivs)
               etamhd =       0.000    ! eta for resistivity
           iambipolar =           0    ! ambipolar diffusion
 
@@ -59,7 +62,9 @@
                idust =           1    ! dust (0:off 1:one-f 2:two-f 3:diff-onef-1st 4:diff-onef-2ndderivs)
         idrag_nature =           1    ! drag type (0=none 1=const K 2=const ts 3=Epstein)
                Kdrag =       1.000    ! drag coeff (idrag=1) or ts (idrag=2) or grain size in cm (idrag=3)
-    use_sqrtdustfrac =           F    ! evolve s=sqrt(rho*eps) instead of eps?
+           idustevol =           0    ! dust variable [0=dustfrac(eps) 1=sqrt(rho*eps) 2=asin(eps)]
+use_smoothed_rhodust =           T    ! use smoothed dust/gas density estimates?
+      islope_limiter =          -1    ! reconstruction/slope limiter (-1=none,0=recon w/out limiter,1=van leer,2=van leer mc 3=minmod
 
 # options affecting self-gravity
             igravity =           0    ! self-gravity
@@ -69,3 +74,14 @@
                ivisc =           0    ! use physical viscosity?
            shearvisc =       0.000    ! shear viscosity (nu)
             bulkvisc =       0.000    ! bulk viscosity (zeta)
+        icompute_d2v =           0    ! compute velocity derivatives (0:none 1:brookshaw 2:direct)
+            idiffuse =           0    ! methods for testing diffusion terms (1=2nd derivs 2=two first derivs)
+               k_iso =       0.000    ! isotropic diffusion coefficient
+               k_par =       0.000    ! anisotropic diffusion coefficient
+
+# options affecting particle splitting
+          isplitpart =           0    ! particle splitting
+             rhocrit =   1.000E+04    ! critical density for particle splitting
+
+# options affecting Quantum SPH
+            iquantum =           0    ! quantum SPH term
