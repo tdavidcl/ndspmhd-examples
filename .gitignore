@@ -1,5 +1,11 @@
+*.mp4
+version
+.DS_Store
+*.png
+*.eps
+*.pdf
 *.mod
 *.o
 *.dat
 *.ev
-*NDSPMHD
+*DSPMHD
