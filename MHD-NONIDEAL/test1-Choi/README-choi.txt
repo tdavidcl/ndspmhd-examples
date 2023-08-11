@@ -20,7 +20,7 @@ The main interesting aspect is to compare the kinetic energy as a function of ti
 
 export ASPLASH_COLUMNSFILE=${NDSPMHD_DIR}/scripts/columns
 
-asplash -e *.ev -y 2 -x 1 -dev /xw
+splash -e *.ev -y 2 -x 1 -dev /xw
 
 You can run the problem in more than one dimension by typing "make 2D" or "make
 3D" and running the corresponding binary (2DSPMHD or 3DSPMHD). To keep

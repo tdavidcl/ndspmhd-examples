@@ -16,7 +16,7 @@ Things to try
 -try a calculation without any artificial viscosity
  (set alpha(min) to 0.000 instead of 1.000)
 -plot the kinetic energy as a function of time in both cases
- (use asplash -e random.ev)
+ (use splash -e random.ev)
 
 -Now try using a more "accurate" pressure term, by using iprterm=-2:
  iprterm =   -2  ! type of pressure term

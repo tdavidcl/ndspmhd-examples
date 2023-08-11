@@ -8,7 +8,7 @@ Or with output to a file: ./1DSPMHD boxK*.in >& box.out &
 
 Plot the kinetic energy as a function of time:
 
-asplash -e -y 2 -x 1 -dev /xw *.ev
+splash -e -y 2 -x 1 -dev /xw *.ev
 
 and compare with the exact solution (red lines; specified in evsplash.func).
 
@@ -32,7 +32,7 @@ or:
  this is already done in the files "onefK*.in"
  
  ./1DSPMHD onefK*.in
- asplash -e -y 2 -x 1 -dev /xw onef*.ev
+ splash -e -y 2 -x 1 -dev /xw onef*.ev
  
 You should see that both the one fluid and the two fluid methods match
 the exact solution to very high accuracy.
