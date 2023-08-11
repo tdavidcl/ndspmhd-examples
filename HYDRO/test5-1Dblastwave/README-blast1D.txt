@@ -7,7 +7,7 @@ Type "make clean" and "make" to re-compile the 1DSPMHD binary.
 Run the code using ./1DSPMHD blast.in
 Or with output to a file: ./1DSPMHD blast.in >& blast.out &
 
-Plot the results using "nsplash blast_0*.dat"
+Plot the results using "splash blast_0*.dat"
 
 For these shock tube-type problems the file blast.shk sets the left and
 right states of the Riemann problem, so edit this file to change the problem.
@@ -21,7 +21,7 @@ Things to try
  
   and plot the results against the exact solution with splash:
   
- nsplash blast_0*.dat -y 17
+ splash blast_0*.dat -y 17
 
 Here we have applied viscosity using a switch (with alphamin = 0.1), and
 a small amount of thermal conductivity:

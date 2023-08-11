@@ -38,7 +38,7 @@ You should see that both the one fluid and the two fluid methods match
 the exact solution to very high accuracy.
 
 You can also look at the velocities on all the particles as a function of time:
- nsplash onefK0.1_0*.dat -y 2 -x 1 -dev /xw
+ splash onefK0.1_0*.dat -y 2 -x 1 -dev /xw
  
 Notice that for the one fluid method the "gas" and "dust" are both just fake copies
 of the mixture particles, with gas and dust properties. That is, only one set of

@@ -6,7 +6,7 @@ Type "make clean" and "make" to re-compile the 2DSPMHD binary.
 Run the code using ./2DSPMHD random.in
 Or with output to a file: ./2DSPMHD random.in >& random.out &
 
-Plot the results using "nsplash random_0*.dat"
+Plot the results using "splash random_0*.dat"
 
 Things to try
 --------------

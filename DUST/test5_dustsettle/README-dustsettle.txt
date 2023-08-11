@@ -31,13 +31,13 @@ dust4.in -- diffusion method with direct second derivatives (PL15)
 
 You can then reproduce Figure 7 of PL15 using:
 
-nsplash -r 7 -dev /xw
+splash -r 7 -dev /xw
 
 (edit splash.filenames to change the list of files being plotted)
 
 A more quantitative comparison of the dust density profile can be obtained by plotting:
 
-nsplash -y 7 -x 2 -dev /xw
+splash -y 7 -x 2 -dev /xw
 
 Finally you can change the grain size (in cm) by setting the "Kdrag" variable:
 

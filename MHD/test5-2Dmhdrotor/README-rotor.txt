@@ -7,7 +7,7 @@ Type "make clean" and "make" to re-compile the 2DSPMHD binary.
 Run the code using ./2DSPMHD mrotor.in
 Or with output to a file: ./2DSPMHD mrotor.in >& mrotor.out &
 
-Plot the results using "nsplash mrotor_0*.dat"
+Plot the results using "splash mrotor_0*.dat"
 
 Things to try
 --------------
@@ -17,7 +17,7 @@ Things to try
 
   Plot the results with:
 
-  "nsplash mrotor_0*.dat -y 31"
+  "splash mrotor_0*.dat -y 31"
   
   (I have set up plots of density, pressure, Mach number and Magnetic pressure)
 

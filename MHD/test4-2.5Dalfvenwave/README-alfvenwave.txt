@@ -13,7 +13,7 @@ Type "make clean" and "make" to re-compile the 2DSPMHD binary.
 Run the code using ./2DSPMHD munstable.in
 Or with output to a file: ./2DSPMHD munstable.in >& munstable.out &
 
-Plot the results using "nsplash munstable_0*.dat"
+Plot the results using "splash munstable_0*.dat"
 
 Things to try
 --------------
@@ -23,7 +23,7 @@ Things to try
 
   Plot the results with:
 
-  "nsplash munstable_0*.dat -y 27"
+  "splash munstable_0*.dat -y 27"
   
   (you will observe that with the conservative-but-unstable force,
    the particles rapidly attract each other in "lines" perpendicular

@@ -5,15 +5,15 @@ Type "make clean" and "make" to re-compile the 1DSPMHD binary.
 Run the code using ./1DSPMHD mshk7.in
 Or with output to a file: ./1DSPMHD mshk7.in >& mshk7.out &
 
-Plot the results using "nsplash mshk7_0*.dat"
+Plot the results using "splash mshk7_0*.dat"
 
 Things to try
 --------------
--Run the default setup in the mshk7.in file and plot the results using nsplash.
+-Run the default setup in the mshk7.in file and plot the results using splash.
  (I have already set up the "multiplot" to plot this problem together with
   the exact solution at the end time, so use:
 
-  "nsplash mshk7_0*.dat -y 26" to plot this.
+  "splash mshk7_0*.dat -y 26" to plot this.
   
 - As previously try playing around with the viscosity,
   thermal conductivity and resistivity parameters.

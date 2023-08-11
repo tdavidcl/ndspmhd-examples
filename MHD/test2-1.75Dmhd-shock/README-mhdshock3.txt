@@ -12,15 +12,15 @@ Type "make clean" and "make" to re-compile the 1DSPMHD binary.
 Run the code using ./1DSPMHD mshk3.in
 Or with output to a file: ./1DSPMHD mshk3.in >& mshk3.out &
 
-Plot the results using "nsplash mshk3_0*.dat"
+Plot the results using "splash mshk3_0*.dat"
 
 Things to try
 --------------
--Run the default setup in the mshk3.in file and plot the results using nsplash.
+-Run the default setup in the mshk3.in file and plot the results using splash.
  (I have already set up the "multiplot" to plot this problem together with
   the exact solution at the end time, so use:
 
-  "nsplash mshk3_0*.dat -y 26" to plot this.
+  "splash mshk3_0*.dat -y 26" to plot this.
   
  In ths case we have applied both viscosity and resistivity using switches:
                  iav =           2    ! type of artificial viscosity

@@ -11,7 +11,7 @@ Or with output to a file: ./3DSPMHD diffuse4.in >& diffuse4.out &
 
 Plot the results:
 
-nsplash -y 19 -x 1 -dev /xw
+splash -y 19 -x 1 -dev /xw
 
 You can also run all the tests in this directory using ./3DSPMHD *.in
 Type "make cleanallfiles" to remove all runtime files from the directory
@@ -30,13 +30,13 @@ approach:
 
  ./3DSPMHD diffuse3.in
 
- nsplash -y 19 -x 1 -dev /xw diffuse3_0*.dat
+ splash -y 19 -x 1 -dev /xw diffuse3_0*.dat
  
  or, to plot with the same series of filenames as previously:
  
  emacs splash.filenames
 
- nsplash -y 19 -x 1 -dev /xw
+ splash -y 19 -x 1 -dev /xw
 
 - Also try evolving s = sqrt(rho*eps) instead of the dust fraction, as described in the appendix of PL15:
 

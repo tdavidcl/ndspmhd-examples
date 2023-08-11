@@ -7,7 +7,7 @@ Type "make clean" and "make" to re-compile the 2DSPMHD binary.
 Run the code using ./2DSPMHD kh.in
 Or with output to a file: ./2DSPMHD kh.in >& kh.out &
 
-Plot the results using "nsplash kh_0*.dat"
+Plot the results using "splash kh_0*.dat"
 
 Things to try
 --------------
@@ -21,7 +21,7 @@ Things to try
 
 - Plot the density as a rendered 2D plot, e.g.:
 
- nsplash -render 7 -dev /xw kh_0*.dat
+ splash -render 7 -dev /xw kh_0*.dat
 
 - Now (or at the same time if you have more than one cpu on your
   computer) perform a calculation where the artificial thermal

@@ -8,7 +8,7 @@ Type "make clean" and "make" to re-compile the 2DSPMHD binary.
 Run the code using ./2DSPMHD pair.in
 Or with output to a file: ./2DSPMHD pair.in >& pair.out &
 
-Plot the results using "nsplash pair_0*.dat"
+Plot the results using "splash pair_0*.dat"
 
 Things to try
 --------------

@@ -7,7 +7,7 @@ Type "make clean" and "make" to re-compile the 1DSPMHD binary.
 Run the code using ./1DSPMHD sshk.in
 Or with output to a file: ./1DSPMHD sshk.in >& sshk.out &
 
-Plot the results using "nsplash sshk_0*.dat -y 18"
+Plot the results using "splash sshk_0*.dat -y 18"
 
 For the shock tube problem the file sshk.shk sets the left and
 right states of the Riemann problem, so edit this file to change the problem.
@@ -15,11 +15,11 @@ The .shk file is also read by splash in order to plot the exact solution.
 
 Things to try
 --------------
--Run the default setup in the sshk.in file and plot the results using nsplash.
+-Run the default setup in the sshk.in file and plot the results using splash.
  (I have already set up the "multiplot" to plot this problem together with
   the exact solution, so use:
 
-  "nsplash sshk_0*.dat -y 18" to plot this.
+  "splash sshk_0*.dat -y 18" to plot this.
 
  The default setup uses "standard" artificial viscosity settings:
                  iav =           2    ! type of artificial viscosity
@@ -49,7 +49,7 @@ Things to try
 
  If you like, you can plot the results together with the first calculation using
  
-  "nsplash sshk*_00020.dat -y 18"
+  "splash sshk*_00020.dat -y 18"
   
  (to get them on the same page, use option 1 in the p menu of splash)
 

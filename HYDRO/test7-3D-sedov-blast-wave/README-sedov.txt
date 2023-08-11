@@ -5,7 +5,7 @@ Type "make clean" and "make" to re-compile the 3DSPMHD binary.
 Run the code using ./3DSPMHD sedov.in
 Or with output to a file: ./3DSPMHD sedov.in >& sedov.out &
 
-Plot the results using "nsplash sedov_0*.dat"
+Plot the results using "splash sedov_0*.dat"
 (the splash.* files in the directory are already setup
  to plot the exact solution for this problem)
 
@@ -23,7 +23,7 @@ Things to try
 
 - Plot the density as a function of radius, alongside the exact solution
 
- nsplash -y 8 -x 1 sedov_0*.dat
+ splash -y 8 -x 1 sedov_0*.dat
 
 - Plot a rendered plot of the column density. First change the coordinate
   system in splash back to cartesian:
@@ -32,7 +32,7 @@ Things to try
   
   Or use the splash settings files with these preset:
 
-  nsplash -p coldens -r 8 -dev /xw    sedov_0*.dat
+  splash -p coldens -r 8 -dev /xw    sedov_0*.dat
 
 - Plot a slice of the density:
 

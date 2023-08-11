@@ -8,7 +8,7 @@ Or with output to a file: ./1DSPMHD twof-nodrag.in >& twof-nodrag.out &
 
 Plot the results:
 
-nsplash twof-nodrag_0*.dat -y 18
+splash twof-nodrag_0*.dat -y 18
 
 You can also run all the tests in this directory using ./1DSPMHD *.in
 Type "make cleanallfiles" to remove all runtime files from the directory
@@ -25,7 +25,7 @@ Things to try
  this is already done in the file "twof-K1.in"
  
  ./1DSPMHD twof-K1.in
- nsplash -p K1 twof-K1_0*.dat -y 18 -dev /xw
+ splash -p K1 twof-K1_0*.dat -y 18 -dev /xw
 
 - Next, try a shock with a very large drag:
 # options affecting dust
@@ -36,7 +36,7 @@ Things to try
  this is already done in the file "twof-K1000.in"
 
  ./1DSPMHD twof-K1000.in
- nsplash -p highdrag twof-K1000*.dat -y 18 -dev /xw
+ splash -p highdrag twof-K1000*.dat -y 18 -dev /xw
  
  You should see that the numerical solution in this case is nowhere near the exact solution
  To get a good answer with the two-fluid method here you need around 10,000 particles
@@ -46,7 +46,7 @@ Things to try
                 psep =   1.000E-04    ! particle separation
 
  ./1DSPMHD twof-K1000hires.in
- nsplash -p highdrag twof_K1000hires*.dat -y 18 -dev /xw
+ splash -p highdrag twof_K1000hires*.dat -y 18 -dev /xw
 
  ...but it is more interesting to compare the result with the one-fluid method:
  
@@ -59,23 +59,23 @@ Things to try
  this is already done in the file "onef-K1000.in":
  
  ./1DSPMHD onef-K1000.in
- nsplash -p highdrag onef-K1000*.dat -y 22 -dev /xw
+ splash -p highdrag onef-K1000*.dat -y 22 -dev /xw
  
  compare this to the exact solution (red line) and also to the two-fluid solution:
  
- nsplash -p highdrag onef-K1000_00020.dat twof-K1000_00020.dat -y 22 -dev /xw
+ splash -p highdrag onef-K1000_00020.dat twof-K1000_00020.dat -y 22 -dev /xw
 
 -Try also the one fluid formulation with K=1 and compare this to the two-fluid result
  
  ./1DSPMHD onef-K1.in
- nsplash -p K1 onef-K1_00020.dat twof-K1_00020.dat -y 22 -dev /xw
+ splash -p K1 onef-K1_00020.dat twof-K1_00020.dat -y 22 -dev /xw
  
  In this case you should see that the two methods give nearly identical results.
 
 -Finally, try the one fluid formulation with K=0
 
  ./1DSPMHD onef-nodrag.in
- nsplash onef-nodrag_*.dat -y 22 -dev /xw
+ splash onef-nodrag_*.dat -y 22 -dev /xw
  
  This is the hardest problem for the one-fluid method, but the solution is still reasonable
 
@@ -91,7 +91,7 @@ Things to try
  This is already done in the file "onef-nodragalt.in":
 
  ./1DSPMHD onef-nodragalt.in
- nsplash onef-nodrag_*.dat -y 22 -dev /xw
+ splash onef-nodrag_*.dat -y 22 -dev /xw
  
  - Finally, you can run the high drag case with the "dust diffusion" algorithm
    as described in Price & Laibe (2015)

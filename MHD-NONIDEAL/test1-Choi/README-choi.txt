@@ -14,7 +14,7 @@ To run the problem with ambipolar diffusion, use:
 
 The wave is in v_z and B_z, so to visualise it, plot v_z (or B_z) against x:
 
-nsplash ambipolar_0*.dat -y 4 -x 1 -dev /xw
+splash ambipolar_0*.dat -y 4 -x 1 -dev /xw
 
 The main interesting aspect is to compare the kinetic energy as a function of time:
 

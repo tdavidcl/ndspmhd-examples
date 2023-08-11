@@ -6,18 +6,18 @@ Type "make clean" and "make" to re-compile the 2DSPMHD binary.
 Run the code using ./2DSPMHD mshk1.in
 Or with output to a file: ./2DSPMHD mshk1.in >& mshk1.out &
 
-Plot the results using "nsplash mshk1_0*.dat"
+Plot the results using "splash mshk1_0*.dat"
 
 For the shock tube problem the .shk sets the left and
 right states of the Riemann problem, so edit this file to change the problem.
 
 Things to try
 --------------
--Run the default setup in the mshk.in file and plot the results using nsplash.
+-Run the default setup in the mshk.in file and plot the results using splash.
  (I have already set up the "multiplot" to plot this problem together with
   the exact solution at t=0.1, so use:
 
-  "nsplash mshk1_0*.dat -y 27" to plot this.
+  "splash mshk1_0*.dat -y 27" to plot this.
   
   The key point is the transverse motion in the particles, which is
   absent in the 1D version of this problem. Try using the Morris formulation:

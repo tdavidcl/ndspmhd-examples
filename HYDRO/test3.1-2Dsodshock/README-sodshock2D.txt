@@ -6,7 +6,7 @@ This identical to the 1D sod shock tube tests, but in 2D:
  ./2DSPMHD sshk.in
 
 To see the plots against the exact solutions, use:
-  nsplash sshk_0*.dat -y 18
+  splash sshk_0*.dat -y 18
 
 Things to note/try
 ------------------
@@ -19,7 +19,7 @@ that artificial conductivity also improves things.
   the particles remesh themselves behind the shock. I have
   setup some splash files to show this plot.
   
-  nsplash -p parts sshk_0*.dat -y 2 -x 1
+  splash -p parts sshk_0*.dat -y 2 -x 1
 
 
 Note that I have started these calculations using a close packed

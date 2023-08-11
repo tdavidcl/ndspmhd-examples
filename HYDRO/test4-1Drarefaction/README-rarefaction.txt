@@ -7,7 +7,7 @@ Type "make clean" and "make" to re-compile the 1DSPMHD binary.
 Run the code using ./1DSPMHD einfeldt.in
 Or with output to a file: ./1DSPMHD einfeldt.in >& einfeldt.out &
 
-Plot the results using "nsplash einfeldt_0*.dat"
+Plot the results using "splash einfeldt_0*.dat"
 
 For these shock tube-type problems the file sshk.shk sets the left and
 right states of the Riemann problem, so edit this file to change the problem.
@@ -21,7 +21,7 @@ Things to try
  
   and plot the results with splash:
   
- nsplash einfeldt_0*.dat -y 17 -dev /xw
+ splash einfeldt_0*.dat -y 17 -dev /xw
 
 Note that this problem has been run without *any* artificial viscosity terms:
                  iav =           0    ! type of artificial viscosity

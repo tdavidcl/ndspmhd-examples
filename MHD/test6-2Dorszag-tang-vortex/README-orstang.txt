@@ -17,7 +17,7 @@ Type "make clean" and "make" to re-compile the 2DSPMHD binary.
 Run the code using ./2DSPMHD morstang.in
 Or with output to a file: ./2DSPMHD morstang.in >& morstang.out &
 
-Plot the results using "nsplash morstang_0*.dat"
+Plot the results using "splash morstang_0*.dat"
 
 Things to try
 --------------
@@ -27,11 +27,11 @@ Things to try
 
   Plot the results with:
 
-  "nsplash morstang_0*.dat -render 7"
+  "splash morstang_0*.dat -render 7"
 
   or to see the magnetic field:
 
-  "nsplash morstang_0*.dat -r 7 -vec 13"
+  "splash morstang_0*.dat -r 7 -vec 13"
  
  (this setup is at a resolution of 128^3, uses B as the evolved
   magnetic variable, and applies viscosity thermal conductivity
