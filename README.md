@@ -27,10 +27,13 @@ now proceed to downloading the examples below
 
 Preliminaries
 --------------
-After cloning the repo:
+Move into another directory (e.g. your home space):
 ```
    cd
-   git clone https://github.com/danieljprice/ndspmhd
+```
+After cloning the repo:
+```
+   git clone https://github.com/danieljprice/ndspmhd-examples
 ```
 and entering the examples directory,
 ```
